@@ -23,9 +23,6 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".header-wrapper {background-color: #f7f3f0;}"
-      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
