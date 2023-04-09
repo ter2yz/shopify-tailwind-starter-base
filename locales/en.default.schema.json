@@ -3399,7 +3399,7 @@
         }
       },
       "presets": {
-        "name": "slideshow"
+        "name": "carousel"
       }
     }
   }
