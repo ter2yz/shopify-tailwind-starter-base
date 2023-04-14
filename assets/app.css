@@ -514,6 +514,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.twcss-h-full {
+  height: 100%;
+}
+
 .twcss-w-screen {
   width: 100vw;
 }
@@ -550,6 +554,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-bg-cover {
   background-size: cover;
+}
+
+.twcss-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .twcss-p-12 {

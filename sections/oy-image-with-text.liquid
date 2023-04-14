@@ -1,10 +1,13 @@
 <div class="twcss-w-full twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-stretch twcss-bg-[#f8fbf3]">
   <div class="twcss-w-full twcss-max-w-2xl">
     {%- if section.settings.image != blank -%}
-      {{
-         section.settings.image
-       | image_url: width: 1500
-       | image_tag: loading: 'lazy', widths: '165, 360, 535, 750, 1070, 1500' }}
+      <img
+        src="{{
+                  section.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', widths: '165, 360, 535, 750, 1070, 1500' }}"
+        class="twcss-w-full twcss-h-full twcss-object-cover"
+        alt="">
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
