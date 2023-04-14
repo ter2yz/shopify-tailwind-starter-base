@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
+.twcss-flex {
+  display: flex;
+}
+
 .twcss-h-screen {
   height: 100vh;
 }
@@ -514,11 +518,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
+.twcss-w-full {
+  width: 100%;
+}
+
+.twcss-max-w-2xl {
+  max-width: 42rem;
+}
+
+.twcss-grow {
+  flex-grow: 1;
+}
+
+.twcss-flex-col {
+  flex-direction: column;
+}
+
+.twcss-items-stretch {
+  align-items: stretch;
+}
+
 .twcss-bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
+.twcss-bg-\[\#f8fbf3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 251 243 / var(--tw-bg-opacity));
+}
+
 .twcss-bg-cover {
   background-size: cover;
+}
+
+.twcss-p-12 {
+  padding: 3rem;
+}
+
+@media (min-width: 990px) {
+  .lg\:twcss-flex-row {
+    flex-direction: row;
+  }
 }

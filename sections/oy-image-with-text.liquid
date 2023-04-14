@@ -1,25 +1,18 @@
-{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-{{ 'component-rte.css' | asset_url | stylesheet_tag }}
-
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
-    px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
-    }
-  }
-{%- endstyle -%}
-
-<div class="twcss-w-screen twcss-h-screen twcss-bg-red-600 {% if section.settings.image != blank %}twcss-bg-cover{% endif %}"></div>
+<div class="twcss-w-full twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-stretch twcss-bg-[#f8fbf3]">
+  <div class="twcss-w-full twcss-max-w-2xl">
+    {%- if section.settings.image != blank -%}
+      {{
+         section.settings.image
+       | image_url: width: 1500
+       | image_tag: loading: 'lazy', widths: '165, 360, 535, 750, 1070, 1500' }}
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="twcss-w-full twcss-grow twcss-p-12">
+    <p>Hello world</p>
+  </div>
+</div>
 
 {% schema %}
   {
