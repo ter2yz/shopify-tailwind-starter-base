@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -429,6 +429,7 @@ html h1,
   html h4,
   html h5,
   html h6,
+  html a,
   html p {
   color: #084b6d;
 }
@@ -517,12 +518,12 @@ html p {
   }
 }
 
-.twcss-mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .twcss-mb-9 {
   margin-bottom: 2.25rem;
+}
+
+.twcss-mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .twcss-block {
@@ -541,6 +542,10 @@ html p {
   width: 100%;
 }
 
+.twcss-w-auto {
+  width: auto;
+}
+
 .twcss-max-w-2xl {
   max-width: 42rem;
 }
@@ -555,6 +560,10 @@ html p {
 
 .twcss-flex-col {
   flex-direction: column;
+}
+
+.twcss-items-start {
+  align-items: flex-start;
 }
 
 .twcss-items-center {
@@ -573,6 +582,19 @@ html p {
   justify-content: center;
 }
 
+.twcss-rounded-2xl {
+  border-radius: 1rem;
+}
+
+.twcss-border-2 {
+  border-width: 2px;
+}
+
+.twcss-border-sky-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(8 75 109 / var(--tw-border-opacity));
+}
+
 .twcss-bg-\[\#f8fbf3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 251 243 / var(--tw-bg-opacity));
@@ -583,9 +605,9 @@ html p {
      object-fit: cover;
 }
 
-.twcss-py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.twcss-py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .twcss-px-16 {
@@ -593,18 +615,22 @@ html p {
   padding-right: 4rem;
 }
 
-.twcss-py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+.twcss-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.twcss-px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .twcss-font-young-serif {
   font-family: Young Serif, Georgia, sans-serif;
 }
 
-.twcss-text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.twcss-font-jakarta {
+  font-family: Plus Jakarta Sans, Georgia, sans-serif;
 }
 
 .twcss-text-8xl {
@@ -612,17 +638,49 @@ html p {
   line-height: 1;
 }
 
+.twcss-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .twcss-font-bold {
   font-weight: 700;
+}
+
+.twcss-font-medium {
+  font-weight: 500;
+}
+
+.twcss-font-semibold {
+  font-weight: 600;
 }
 
 .twcss-uppercase {
   text-transform: uppercase;
 }
 
+.twcss-capitalize {
+  text-transform: capitalize;
+}
+
 .twcss-leading-snug {
   line-height: 1.375;
 }
+
+.twcss-text-sky-primary {
+  --tw-text-opacity: 1;
+  color: rgb(8 75 109 / var(--tw-text-opacity));
+}
+
+.twcss-transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Font Face setting - Young Serif */
 
 @font-face {
   font-family: 'Young Serif';
@@ -631,11 +689,107 @@ html p {
     url('YoungSerif-Regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Plus JakartaSans';
+/* Font Face setting - Plus Jakarta Sans */
 
-  src: url('PlusJakartaSans-VariableFont_wght.woff') format('woff'),
-    url('PlusJakartaSans-VariableFont_wght.woff2') format('woff2');
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-Medium.woff2') format('woff2'),
+    url('PlusJakartaSans-Medium.woff') format('woff');
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-Light.woff2') format('woff2'),
+    url('PlusJakartaSans-Light.woff') format('woff');
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-Regular.woff2') format('woff2'),
+    url('PlusJakartaSans-Regular.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-ExtraLight.woff2') format('woff2'),
+    url('PlusJakartaSans-ExtraLight.woff') format('woff');
+
+  font-weight: 200;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-Bold.woff2') format('woff2'),
+    url('PlusJakartaSans-Bold.woff') format('woff');
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-SemiBold.woff2') format('woff2'),
+    url('PlusJakartaSans-SemiBold.woff') format('woff');
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+
+  src: url('PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+    url('PlusJakartaSans-ExtraBold.woff') format('woff');
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+.hover\:twcss-bg-sky-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 75 109 / var(--tw-bg-opacity));
+}
+
+.hover\:twcss-text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 990px) {
