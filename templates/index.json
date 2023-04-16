@@ -69,23 +69,23 @@
         "padding_bottom": 36
       }
     },
-    "a0bd5501-740d-4dea-93fe-7be06c1cdd5f": {
-      "type": "rich-text",
+    "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
+      "type": "oy-image-icon-text-cta",
       "blocks": {
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-0": {
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-0": {
           "type": "heading",
           "settings": {
             "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
         },
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-1": {
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-1": {
           "type": "text",
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-2": {
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-2": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
@@ -98,9 +98,9 @@
         }
       },
       "block_order": [
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-0",
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-1",
-        "template--18242976317724__a0bd5501-740d-4dea-93fe-7be06c1cdd5f-1681652622217e2aa2-2"
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-0",
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-1",
+        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-2"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -111,17 +111,17 @@
         "padding_bottom": 52
       }
     },
-    "d046f91b-43bb-42e3-a33b-39fad521ab18": {
-      "type": "image-banner",
+    "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
+      "type": "oy-image-banner",
       "blocks": {
-        "template--18242976317724__d046f91b-43bb-42e3-a33b-39fad521ab18-168165266251de3acc-0": {
+        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-0": {
           "type": "heading",
           "settings": {
-            "heading": "Let them play.",
+            "heading": "Image banner",
             "heading_size": "h1"
           }
         },
-        "template--18242976317724__d046f91b-43bb-42e3-a33b-39fad521ab18-168165266251de3acc-1": {
+        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-1": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -130,11 +130,10 @@
         }
       },
       "block_order": [
-        "template--18242976317724__d046f91b-43bb-42e3-a33b-39fad521ab18-168165266251de3acc-0",
-        "template--18242976317724__d046f91b-43bb-42e3-a33b-39fad521ab18-168165266251de3acc-1"
+        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-0",
+        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/montessori-toys-1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -146,10 +145,10 @@
         "show_text_below": true
       }
     },
-    "2a191001-6692-4483-b565-6c74ab4debac": {
-      "type": "featured-collection",
+    "e30789c7-a70d-47bf-a118-6fea3f9a2347": {
+      "type": "oy-feature-collection",
       "settings": {
-        "title": "New Arrivals",
+        "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -163,14 +162,14 @@
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "20a3428b-eb16-4c01-a1de-2b8987d06e83": {
@@ -207,75 +206,89 @@
         "padding_bottom": 52
       }
     },
-    "c8d70498-7652-484e-b377-2fe2e1c0c214": {
-      "type": "oy-image-with-text",
+    "40ba320b-cdd0-4772-bc1a-531bd6a1630e": {
+      "type": "oy-custom-self",
       "blocks": {
-        "dad51386-3392-4e6c-8881-1c1cb50d5186": {
-          "type": "caption",
-          "settings": {
-            "caption": "HANDCRAFTED FOR KIDS",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "841999e9-bf25-40c6-8175-8e49248bf6df": {
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Go on, let them play with wooden blocks."
+            "heading": "Image with text"
           }
         },
-        "955fd097-4f9e-450d-b9e1-412075f7faf8": {
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1": {
           "type": "text",
           "settings": {
-            "text": "Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis pulvinar tellus."
+            "text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
           }
         },
-        "284b2e4f-bc15-4bb9-b1a9-50a027b8ab0e": {
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop all",
+            "button_label": "Button label",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "dad51386-3392-4e6c-8881-1c1cb50d5186",
-        "841999e9-bf25-40c6-8175-8e49248bf6df",
-        "955fd097-4f9e-450d-b9e1-412075f7faf8",
-        "284b2e4f-bc15-4bb9-b1a9-50a027b8ab0e"
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0",
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1",
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/5ea27a16b6a15e74865ec20b_portrait-02.jpg",
-        "layout": "text_first"
+        "layout": "image_first"
       }
     },
-    "801cac46-875d-4ed0-acb4-e45b9ab32293": {
-      "type": "featured-blog",
-      "disabled": true,
+    "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-0",
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-1",
+        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-2"
+      ],
       "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "news",
-        "post_limit": 3,
-        "columns_desktop": 3,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
-    "a0bd5501-740d-4dea-93fe-7be06c1cdd5f",
-    "d046f91b-43bb-42e3-a33b-39fad521ab18",
-    "2a191001-6692-4483-b565-6c74ab4debac",
+    "57a133a8-ef64-4af4-ae3d-2661aa21438a",
+    "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
+    "e30789c7-a70d-47bf-a118-6fea3f9a2347",
     "20a3428b-eb16-4c01-a1de-2b8987d06e83",
-    "c8d70498-7652-484e-b377-2fe2e1c0c214",
-    "801cac46-875d-4ed0-acb4-e45b9ab32293"
+    "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
+    "d98ed3ac-81a2-47e5-b7b2-b07c630976dd"
   ]
 }
