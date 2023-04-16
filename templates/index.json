@@ -42,46 +42,19 @@
         "layout": "image_first"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
     "collage": {
       "type": "collage",
       "blocks": {
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "safety"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "mombella-door-stopper",
             "second_image": false
           }
         },
@@ -114,19 +87,53 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=USnu4HuGSkQ",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "20a3428b-eb16-4c01-a1de-2b8987d06e83": {
+      "type": "newsletter",
+      "blocks": {
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-0",
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-1",
+        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
-    "featured_collection",
     "collage",
-    "video"
+    "video",
+    "20a3428b-eb16-4c01-a1de-2b8987d06e83"
   ]
 }
