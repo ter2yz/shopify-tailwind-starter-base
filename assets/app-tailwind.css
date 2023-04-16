@@ -13,7 +13,9 @@
   html p {
     color: #084b6d;
   }
-  html p {
+  html p,
+  html span,
+  html a {
     font-family: 'Plus JakartaSans', system-ui, sans-serif;
     font-size: 20px;
   }
