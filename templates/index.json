@@ -3,10 +3,18 @@
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19": {
       "type": "oy-image-with-text",
       "blocks": {
+        "4ab7d2c1-2d5f-4580-82c2-52656dcee534": {
+          "type": "caption",
+          "settings": {
+            "caption": "HANDCRAFTED FOR KIDS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Go on, let them play with wooden blocks.",
             "heading_size": "h1"
           }
         },
@@ -26,6 +34,7 @@
         }
       },
       "block_order": [
+        "4ab7d2c1-2d5f-4580-82c2-52656dcee534",
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-0",
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-1",
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-2"
