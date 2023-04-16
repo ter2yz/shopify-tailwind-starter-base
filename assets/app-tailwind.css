@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('YoungSerif-Regular.woff');
+@import url('YoungSerif-Regular.woff2');
