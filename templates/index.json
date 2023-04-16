@@ -172,32 +172,32 @@
         "padding_bottom": 36
       }
     },
-    "20a3428b-eb16-4c01-a1de-2b8987d06e83": {
-      "type": "newsletter",
+    "f38c4b27-082d-49c9-b888-e38cfd78a500": {
+      "type": "oy-email-signup",
       "blocks": {
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-0": {
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-0": {
           "type": "heading",
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-1": {
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-1": {
           "type": "paragraph",
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-2": {
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-2": {
           "type": "email_form",
           "settings": {
           }
         }
       },
       "block_order": [
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-0",
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-1",
-        "template--18242976317724__20a3428b-eb16-4c01-a1de-2b8987d06e83-16816256941dd16112-2"
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-0",
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-1",
+        "template--18242976317724__f38c4b27-082d-49c9-b888-e38cfd78a500-16816594537a2016fd-2"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -244,7 +244,7 @@
         "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "<p>Stress-free shopping, guaranteed.<\/p>",
             "heading_size": "h1"
           }
         },
@@ -287,7 +287,7 @@
     "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
     "e30789c7-a70d-47bf-a118-6fea3f9a2347",
-    "20a3428b-eb16-4c01-a1de-2b8987d06e83",
+    "f38c4b27-082d-49c9-b888-e38cfd78a500",
     "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd"
   ]
