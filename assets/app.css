@@ -554,12 +554,24 @@ html p {
   max-width: 56rem;
 }
 
+.twcss-max-w-5xl {
+  max-width: 64rem;
+}
+
+.twcss-max-w-6xl {
+  max-width: 72rem;
+}
+
 .twcss-grow {
   flex-grow: 1;
 }
 
 .twcss-flex-col {
   flex-direction: column;
+}
+
+.twcss-flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .twcss-items-start {
