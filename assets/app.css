@@ -423,6 +423,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html p {
+  color: #084b6d;
+}
+
+html p {
+  font-family: 'Plus JakartaSans', system-ui, sans-serif;
+  font-size: 20px;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -502,6 +517,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.twcss-mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -522,6 +545,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 42rem;
 }
 
+.twcss-max-w-4xl {
+  max-width: 56rem;
+}
+
 .twcss-grow {
   flex-grow: 1;
 }
@@ -530,8 +557,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.twcss-items-center {
+  align-items: center;
+}
+
 .twcss-items-stretch {
   align-items: stretch;
+}
+
+.twcss-justify-start {
+  justify-content: flex-start;
+}
+
+.twcss-justify-center {
+  justify-content: center;
 }
 
 .twcss-bg-\[\#f8fbf3\] {
@@ -544,13 +583,60 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
-.twcss-p-12 {
-  padding: 3rem;
+.twcss-py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
-@import url('YoungSerif-Regular.woff');
+.twcss-px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 
-@import url('YoungSerif-Regular.woff2');
+.twcss-py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.twcss-font-young-serif {
+  font-family: Young Serif, Georgia, sans-serif;
+}
+
+.twcss-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.twcss-text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.twcss-font-bold {
+  font-weight: 700;
+}
+
+.twcss-uppercase {
+  text-transform: uppercase;
+}
+
+.twcss-leading-snug {
+  line-height: 1.375;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+
+  src: url('YoungSerif-Regular.woff') format('woff'),
+    url('YoungSerif-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus JakartaSans';
+
+  src: url('PlusJakartaSans-VariableFont_wght.woff') format('woff'),
+    url('PlusJakartaSans-VariableFont_wght.woff2') format('woff2');
+}
 
 @media (min-width: 990px) {
   .lg\:twcss-flex-row {

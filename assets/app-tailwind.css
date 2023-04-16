@@ -2,5 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('YoungSerif-Regular.woff');
-@import url('YoungSerif-Regular.woff2');
+@font-face {
+  font-family: 'Young Serif';
+  src: url('YoungSerif-Regular.woff') format('woff'),
+    url('YoungSerif-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus JakartaSans';
+  src: url('PlusJakartaSans-VariableFont_wght.woff') format('woff'),
+    url('PlusJakartaSans-VariableFont_wght.woff2') format('woff2');
+}
+
+@layer base {
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html p {
+    color: #084b6d;
+  }
+  html p {
+    font-family: 'Plus JakartaSans', system-ui, sans-serif;
+    font-size: 20px;
+  }
+}
