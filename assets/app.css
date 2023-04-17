@@ -642,6 +642,11 @@ html p,
   background-color: rgb(248 251 243 / var(--tw-bg-opacity));
 }
 
+.twcss-bg-sky-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 75 109 / var(--tw-bg-opacity));
+}
+
 .twcss-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -729,6 +734,11 @@ html p,
 
 .twcss-text-sky-primary\/60 {
   color: rgb(8 75 109 / 0.6);
+}
+
+.twcss-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .twcss-opacity-0 {

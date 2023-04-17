@@ -4,6 +4,7 @@
       <img
         src="{{ section.settings.image | image_url: width: 1500 }}"
         class="twcss-w-full twcss-h-full twcss-object-cover"
+        loading="lazy"
         alt="">
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
