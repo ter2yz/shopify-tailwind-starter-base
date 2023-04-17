@@ -72,43 +72,27 @@
     "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
       "type": "oy-image-icon-text-cta",
       "blocks": {
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-0": {
-          "type": "heading",
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
+          "type": "brand",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
+            "image_with_text_image": "shopify:\/\/shop_images\/Bildschirmfoto_2019-07-26_um_11_47_48_pn.webp",
+            "image_link": "https:\/\/www.scootandride.at\/"
           }
         },
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-1": {
-          "type": "text",
+        "09567cdf-1f2a-4b46-9f96-248026f027df": {
+          "type": "brand",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-0",
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-1",
-        "template--18242976317724__57a133a8-ef64-4af4-ae3d-2661aa21438a-16816585905b5c2458-2"
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726",
+        "09567cdf-1f2a-4b46-9f96-248026f027df"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "caption": "",
+        "heading": ""
       }
     },
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
@@ -240,44 +224,9 @@
     },
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {
       "type": "oy-image-icon-text-cta",
-      "blocks": {
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Stress-free shopping, guaranteed.<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-0",
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-1",
-        "template--18242976317724__d98ed3ac-81a2-47e5-b7b2-b07c630976dd-16816585905b5c2458-2"
-      ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "caption": "",
+        "heading": ""
       }
     }
   },
