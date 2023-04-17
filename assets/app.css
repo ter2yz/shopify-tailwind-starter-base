@@ -727,6 +727,10 @@ html p,
   color: rgb(8 75 109 / var(--tw-text-opacity));
 }
 
+.twcss-text-sky-primary\/60 {
+  color: rgb(8 75 109 / 0.6);
+}
+
 .twcss-opacity-0 {
   opacity: 0;
 }
