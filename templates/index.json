@@ -189,42 +189,33 @@
     "40ba320b-cdd0-4772-bc1a-531bd6a1630e": {
       "type": "oy-custom-self",
       "blocks": {
-        "40d414bc-b13f-4273-bcef-db6ab945cfb9": {
-          "type": "caption",
-          "settings": {
-            "caption": "BUY WITH CONFIDENCE",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0": {
           "type": "heading",
           "settings": {
-            "heading": "We’re a top-tier retailer you know."
+            "heading": "Image with text"
           }
         },
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1": {
           "type": "text",
           "settings": {
-            "text": "Ut urna scelerisque pellentesque id condimentum vitae nibh. Bibendum convallis odio blandit sem a, dictum sit."
+            "text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
           }
         },
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-2": {
           "type": "button",
           "settings": {
-            "button_label": "",
+            "button_label": "Button label",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "40d414bc-b13f-4273-bcef-db6ab945cfb9",
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0",
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1",
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-2"
       ],
       "settings": {
-        "layout": "text_first"
+        "layout": "image_first"
       }
     },
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {

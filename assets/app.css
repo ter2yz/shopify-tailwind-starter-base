@@ -645,6 +645,10 @@ html p,
   max-width: 100px;
 }
 
+.twcss-max-w-\[70px\] {
+  max-width: 70px;
+}
+
 .twcss-grow {
   flex-grow: 1;
 }
