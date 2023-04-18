@@ -1,7 +1,7 @@
 {
   "sections": {
-    "main": {
-      "type": "main-product",
+    "oy-main": {
+      "type": "oy-main-product",
       "blocks": {
         "vendor": {
           "type": "text",
@@ -215,7 +215,7 @@
     }
   },
   "order": [
-    "main",
+    "oy-main",
     "image-with-text",
     "multicolumn",
     "related-products"
