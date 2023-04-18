@@ -1,4 +1,4 @@
-<div class="twcss-w-full twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-stretch twcss-bg-[#f8fbf3]">
+<div class="twcss-w-full twcss-flex twcss-flex-col {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
   <div class="twcss-w-full twcss-max-w-5xl">
     {%- if section.settings.image != blank -%}
       <img
