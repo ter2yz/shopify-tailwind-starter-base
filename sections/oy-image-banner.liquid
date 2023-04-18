@@ -2,16 +2,14 @@
 This is an example section that uses the "image_with_heading" schema
 {% endcomment %}
 
-{% assign section = section.settings %}
-
 <section>
-  <div class="twcss-min-h-[80vh] twcss-flex twcss-justify-center twcss-items-center twcss-bg-cover twcss-bg-no-repeat twcss-bg-center" style="background-image: url({{ section.image | image_url: width: 2000 }})">
+  <div class="twcss-min-h-[80vh] twcss-flex twcss-justify-center twcss-items-center twcss-bg-cover twcss-bg-no-repeat twcss-bg-center" style="background-image: url({{ section.settings.image | image_url: width: 2000 }})">
     <div class="twcss-max-w-5xl twcss-bg-white twcss-py-20 twcss-px-16 twcss-flex twcss-flex-col twcss-items-center">
-      {% if section.caption != blank %}
-        <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ section.caption }}</p>
+      {% if section.settings.caption != blank %}
+        <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ section.settings.caption }}</p>
       {% endif %}
-      <h2 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ section.heading }}</h2>
-      <p class="twcss-text-center">{{ section.description }}</p>
+      <h2 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ section.settings.heading }}</h2>
+      <p class="twcss-text-center twcss-mb-12">{{ section.settings.description }}</p>
       {%- for block in section.blocks -%}
         {% case block.type %}
           {%- when 'button' -%}
@@ -23,7 +21,7 @@ This is an example section that uses the "image_with_heading" schema
               {% else %}
               href="{{ block.settings.button_link }}"
               {% endif %}
-              class="twcss-py-6 twcss-px-9 twcss-border-2 twcss-rounded-2xl twcss-font-semibold twcss-capitalize twcss-border-sky-primary twcss-w-auto twcss-font-jakarta twcss-bg-transparent twcss-text-sky-primary twcss-transition hover:twcss-bg-sky-primary hover:twcss-text-white"
+              class="twcss-py-6 twcss-px-9 twcss-rounded-2xl twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-bg-sky-primary/80 twcss-w-auto twcss-font-jakarta twcss-bg-transparent twcss-text-white twcss-transition hover:twcss-bg-sky-primary/100"
               {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
             </a>

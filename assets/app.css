@@ -557,6 +557,14 @@ html p,
   margin-bottom: 1.5rem;
 }
 
+.twcss-mb-12 {
+  margin-bottom: 3rem;
+}
+
+.twcss-mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -713,6 +721,10 @@ html p,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.twcss-bg-sky-primary\/80 {
+  background-color: rgb(8 75 109 / 0.8);
+}
+
 .twcss-bg-cover {
   background-size: cover;
 }
@@ -793,6 +805,11 @@ html p,
 .twcss-text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.twcss-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .twcss-font-bold {
@@ -960,6 +977,10 @@ html p,
   background-color: rgb(8 75 109 / var(--tw-bg-opacity));
 }
 
+.hover\:twcss-bg-sky-primary\/100:hover {
+  background-color: rgb(8 75 109 / 1);
+}
+
 .hover\:twcss-text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1023,6 +1044,10 @@ html p,
 
   .lg\:twcss-flex-row {
     flex-direction: row;
+  }
+
+  .lg\:twcss-flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .lg\:twcss-justify-center {
