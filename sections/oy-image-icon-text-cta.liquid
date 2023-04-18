@@ -1,23 +1,17 @@
-<div class="twcss-w-full twcss-py-40">
+<div class="twcss-w-full twcss-py-20">
   <div class="twcss-container">
     <div class="twcss-w-full twcss-flex twcss-flex-col twcss-items-center">
       <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ section.settings.caption }}</p>
       <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ section.settings.heading }}</h3>
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'brand' -%}
-          <h2 class="">
-            {{ block.settings.image_link }}
-          </h2>
-        {%- endcase -%}
-      {%- endfor -%}
-      <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-center">
+      <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-start lg:twcss-justify-center">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'brand' -%}
-            <div class="twcss-w-1/4">
-              <a href="{{ block.settings.image_link  }}" class="twcss-w-full twcss-flex twcss-justify-center twcss-items-center twcss-opacity-50 twcss-transition twcss-duration-300 hover:twcss-opacity-80">
-                {{ section.settings.image_with_text_image | image_url: width: 1500 | image_tag }}
+            <div class="twcss-w-1/2 lg:twcss-w-1/4">
+              <a href="{{ block.settings.image_link }}" class="twcss-w-full twcss-flex twcss-justify-center twcss-items-center twcss-opacity-50 twcss-transition twcss-duration-300 hover:twcss-opacity-80">
+                <div class="twcss-max-w-[100px] md:twcss-max-w-[200px]">
+                  {{ block.settings.image_with_text_image | image_url: width: 1500 | image_tag }}
+                </div>
               </a>
             </div>
           {%- endcase -%}
