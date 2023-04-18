@@ -5,13 +5,13 @@ This is an example section that uses the "image_with_heading" schema
 {% assign section = section.settings %}
 
 <section>
-  <div class="image-with-heading twcss-min-h-[80vh] twcss-bg-cover twcss-bg-no-repeat twcss-bg-center" style="background-image: url({{ section.image | img_url }})">
-    <div class="container">
-      <h2>{{ section.heading }}</h2>
+  <div class="twcss-min-h-[80vh] twcss-flex twcss-justify-center twcss-items-center twcss-bg-cover twcss-bg-no-repeat twcss-bg-center" style="background-image: url({{ section.image | image_url: width: 2000 }})">
+    <div class="twcss-max-w-5xl twcss-bg-white twcss-py-20 twcss-px-16 twcss-flex twcss-flex-col twcss-items-center">
       {% if section.caption != blank %}
-        <p class="caption">{{ section.caption }}</p>
+        <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ section.caption }}</p>
       {% endif %}
-      <div class="description">{{ section.description }}</div>
+      <h2 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ section.heading }}</h2>
+      <p class="twcss-text-center">{{ section.description }}</p>
     </div>
   </div>
 </section>
@@ -41,7 +41,7 @@ This is an example section that uses the "image_with_heading" schema
         "label": "Caption",
         "info": "Enter a caption for the image"
       }, {
-        "type": "richtext",
+        "type": "inline_richtext",
         "id": "description",
         "label": "Description",
         "info": "Enter a description for the section"
