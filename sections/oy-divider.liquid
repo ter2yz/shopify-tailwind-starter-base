@@ -1,0 +1,18 @@
+<div class="twcss-w-full" style="background-color: {{ section.settings.color  }}">
+    <img src="{{ 'waves.svg' | asset_url }}" class="twcss-w-full twcss-h-16" alt="" loading="lazy">
+</div>
+{% schema  %}
+{
+    "name": "OY divider",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "color",
+            "id": "color",
+            "label": "Color",
+            "default": "#f8fbf3",
+            "info": "Select the color for the element."
+        }
+    ]
+}
+{% endschema %}

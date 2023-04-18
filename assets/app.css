@@ -1287,6 +1287,10 @@ html p,
   height: 100%;
 }
 
+.twcss-h-16 {
+  height: 4rem;
+}
+
 .twcss-min-h-\[80vh\] {
   min-height: 80vh;
 }
@@ -1400,6 +1404,11 @@ html p,
 
 .twcss-bg-sky-primary\/80 {
   background-color: rgb(8 75 109 / 0.8);
+}
+
+.twcss-bg-sky-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 75 109 / var(--tw-bg-opacity));
 }
 
 .twcss-bg-cover {
