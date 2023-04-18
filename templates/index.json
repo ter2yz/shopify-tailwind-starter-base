@@ -78,10 +78,26 @@
             "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich.png",
             "image_link": "https:\/\/www.scootandride.at\/"
           }
+        },
+        "cda1b07f-59a9-4d46-829b-8c1148edb622": {
+          "type": "brand",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-ambi_toys.png",
+            "image_link": ""
+          }
+        },
+        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865": {
+          "type": "brand",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-mideer.png",
+            "image_link": ""
+          }
         }
       },
       "block_order": [
-        "dfcfd393-00a9-4459-8294-1b3ba70b7726"
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726",
+        "cda1b07f-59a9-4d46-829b-8c1148edb622",
+        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865"
       ],
       "settings": {
         "caption": "Brands we're offering",
