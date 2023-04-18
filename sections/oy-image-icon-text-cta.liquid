@@ -1,68 +1,78 @@
-<div class="twcss-w-full twcss-py-40 twcss-bg-sky-primary">
+<div class="twcss-w-full twcss-py-40">
   <div class="twcss-container">
-      <div class="">
-        <p class="twcss-text-white">{{ section.settings.caption }}</p>
-        <p class="twcss-text-white">{{ section.settings.heading }}</p>
+    <div class="twcss-w-full twcss-flex twcss-flex-col twcss-items-center">
+      <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ section.settings.caption }}</p>
+      <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ section.settings.heading }}</h3>
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'brand' -%}
+          <h2 class="">
+            {{ block.settings.image_link }}
+          </h2>
+        {%- endcase -%}
+      {%- endfor -%}
+      <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-center">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'brand' -%}
-            <h2 class="twcss-text-white">
-              {{ block.settings.image_link }}
-            </h2>
+            <div class="twcss-w-1/4">
+              <a href="{{ block.settings.image_link  }}" class="twcss-w-full twcss-flex twcss-justify-center twcss-items-center twcss-opacity-50 twcss-transition twcss-duration-300 hover:twcss-opacity-80">
+                {{ section.settings.image_with_text_image | image_url: width: 1500 | image_tag }}
+              </a>
+            </div>
           {%- endcase -%}
         {%- endfor -%}
+
       </div>
+    </div>
   </div>
 </div>
 
 {% schema %}
-{
-  "name": "OY Image icon text",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [
-    {
-      "type": "text",
-      "id": "caption",
-      "label": "Caption"
+  {
+    "name": "OY Image icon text",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
     },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "brand",
-      "name": "Brand",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image_with_text_image",
-          "label": "Image"
-        },
-        {
-          "type": "url",
-          "id": "image_link",
-          "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "OY Image icon text",
-      "blocks": [
-        {
-          "type": "brand"
-        }
-      ]
-    }
-  ]
-}
-
+    "settings": [
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "brand",
+        "name": "Brand",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_with_text_image",
+            "label": "Image"
+          }, {
+            "type": "url",
+            "id": "image_link",
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "OY Image icon text",
+        "blocks": [
+          {
+            "type": "brand"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
