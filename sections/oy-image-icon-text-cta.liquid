@@ -15,22 +15,22 @@
   class="twcss-w-full section-{{ section.id }}-padding">
   <div class="twcss-container">
     <div class="twcss-w-full twcss-flex twcss-flex-col twcss-items-center">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'caption' -%}
+          <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ block.settings.caption }}</p>
+          {%- when 'icon' -%}
+          <div class="twcss-max-w-[70px] twcss-mb-6">
+            {{ block.settings.image_icon | image_url: width: 140 | image_tag }}
+          </div>
+          {%- when 'heading' -%}
+          <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ block.settings.heading }}</h3>
+        {%- endcase -%}
+      {%- endfor -%}
       <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-start lg:twcss-justify-center">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {%- when 'caption' -%}
-            <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ block.settings.caption }}</p>
-            {%- when 'icon' -%}
-            <div class="twcss-max-w-[70px]">
-              {{ block.settings.image_icon | image_url: width: 140 | image_tag }}
-            </div>
-            {%- when 'heading' -%}
-            <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ block.settings.heading }}</h3>
-          {%- endcase -%}
-        {%- endfor -%}
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-          {%- when 'brand' -%}
+            {%- when 'brand' -%}
             <div class="twcss-w-1/2 lg:twcss-w-1/4">
               <a href="{{ block.settings.image_link }}" class="twcss-w-full twcss-flex twcss-justify-center twcss-items-center twcss-opacity-50 twcss-transition twcss-duration-300 hover:twcss-opacity-80">
                 <div class="twcss-max-w-[100px] md:twcss-max-w-[200px]">
