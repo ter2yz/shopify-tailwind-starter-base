@@ -106,6 +106,18 @@
     },
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
       "type": "oy-image-banner",
+      "blocks": {
+        "b422b20a-851c-49b7-aa6f-80ced31b5a6c": {
+          "type": "button",
+          "settings": {
+            "button_label": "About Us",
+            "button_link": "shopify:\/\/pages\/contact"
+          }
+        }
+      },
+      "block_order": [
+        "b422b20a-851c-49b7-aa6f-80ced31b5a6c"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/baby-toys-bottles-products.jpg",
         "heading": "Let them play.",
