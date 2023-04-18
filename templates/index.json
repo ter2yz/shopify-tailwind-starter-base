@@ -106,36 +106,11 @@
     },
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
       "type": "oy-image-banner",
-      "blocks": {
-        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-0",
-        "template--18242976317724__7d09714b-e325-4ed8-85a5-a9d6fe39fea4-1681658617667807bc-1"
-      ],
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image": "shopify:\/\/shop_images\/baby-toys-bottles-products.jpg",
+        "heading": "Let them play.",
+        "caption": "LEARNING THROUGH DOING",
+        "description": "<p>Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa.<\/p>"
       }
     },
     "e30789c7-a70d-47bf-a118-6fea3f9a2347": {
