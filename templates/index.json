@@ -75,20 +75,13 @@
         "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
           "type": "brand",
           "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/Bildschirmfoto_2019-07-26_um_11_47_48_pn.webp",
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich.png",
             "image_link": "https:\/\/www.scootandride.at\/"
-          }
-        },
-        "09567cdf-1f2a-4b46-9f96-248026f027df": {
-          "type": "brand",
-          "settings": {
-            "image_link": ""
           }
         }
       },
       "block_order": [
-        "dfcfd393-00a9-4459-8294-1b3ba70b7726",
-        "09567cdf-1f2a-4b46-9f96-248026f027df"
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726"
       ],
       "settings": {
         "caption": "Brands we're offering",
