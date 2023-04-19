@@ -2003,7 +2003,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  color: rgba(var(--color-foreground));
+  color: rgba(8, 75, 109);
   position: relative;
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
@@ -2837,10 +2837,9 @@ details-disclosure > details {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
+  background-color: rgb(8 75 109);
   color: rgb(var(--color-foreground));
   word-break: break-word;
 }

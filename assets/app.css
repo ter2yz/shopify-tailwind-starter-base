@@ -1279,6 +1279,10 @@ html p,
   margin-bottom: 5rem;
 }
 
+.twcss-ml-3 {
+  margin-left: 0.75rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -1491,6 +1495,10 @@ html p,
   padding-right: 1.5rem;
 }
 
+.twcss-pl-3 {
+  padding-left: 0.75rem;
+}
+
 .twcss-text-center {
   text-align: center;
 }
@@ -1533,6 +1541,10 @@ html p,
   line-height: 1.75rem;
 }
 
+.twcss-text-\[20px\] {
+  font-size: 20px;
+}
+
 .twcss-font-bold {
   font-weight: 700;
 }
@@ -1565,6 +1577,10 @@ html p,
 
 .twcss-text-sky-primary\/60 {
   color: rgb(8 75 109 / 0.6);
+}
+
+.twcss-text-sky-primary\/40 {
+  color: rgb(8 75 109 / 0.4);
 }
 
 .twcss-opacity-50 {

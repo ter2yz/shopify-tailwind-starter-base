@@ -83,7 +83,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 12
       }
     },
     "related-products": {
@@ -162,8 +162,8 @@
       ],
       "settings": {
         "bg_color": "#f8fbf3",
-        "padding_top": 60,
-        "padding_bottom": 48
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
