@@ -1271,6 +1271,14 @@ html p,
   margin-top: 10rem;
 }
 
+.twcss-mb-16 {
+  margin-bottom: 4rem;
+}
+
+.twcss-mb-20 {
+  margin-bottom: 5rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -1291,6 +1299,14 @@ html p,
   height: 4rem;
 }
 
+.twcss-h-9 {
+  height: 2.25rem;
+}
+
+.twcss-h-6 {
+  height: 1.5rem;
+}
+
 .twcss-min-h-\[80vh\] {
   min-height: 80vh;
 }
@@ -1305,6 +1321,10 @@ html p,
 
 .twcss-w-1\/2 {
   width: 50%;
+}
+
+.twcss-w-1\/4 {
+  width: 25%;
 }
 
 .twcss-max-w-5xl {
@@ -1461,6 +1481,16 @@ html p,
   padding-bottom: 5rem;
 }
 
+.twcss-px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.twcss-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .twcss-text-center {
   text-align: center;
 }
@@ -1491,6 +1521,16 @@ html p,
 .twcss-text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.twcss-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.twcss-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .twcss-font-bold {
@@ -1939,6 +1979,10 @@ html p,
     margin-bottom: 0;
   }
 
+  .lg\:twcss-h-16 {
+    height: 4rem;
+  }
+
   .lg\:twcss-w-1\/4 {
     width: 25%;
   }
@@ -1953,5 +1997,10 @@ html p,
 
   .lg\:twcss-justify-center {
     justify-content: center;
+  }
+
+  .lg\:twcss-px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
