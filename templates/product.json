@@ -38,12 +38,6 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -55,6 +49,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -67,7 +62,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "collapsible-row-1",
         "share"
       ],
