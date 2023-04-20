@@ -134,7 +134,7 @@
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
-      <header-drawer data-breakpoint="tablet">
+      {% comment %} <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
             <span>
@@ -300,11 +300,49 @@
             </div>
           </div>
         </details>
-      </header-drawer>
+      </header-drawer> {% endcomment %}
+      <div id="slide-menu-drawer" class="twcss-w-full twcss-h-screen twcss-min-h-[800px] twcss-max-w-4xl twcss-fixed twcss-left-0 twcss-top-0 twcss-bg-sky-primary twcss-z-50 -twcss-translate-x-full twcss-hidden twcss-transition twcss-duration-300">
+        <button id="drawer-close-button" class="twcss-absolute twcss-top-9 twcss-right-9 twcss-z-20">
+          <img src="{{ "icon-x.svg" | asset_url }}" width="26" height="26" loading="lazy" alt="">
+        </button>
+        <div class="twcss-w-full twcss-h-screen twcss-py-28 twcss-px-28 twcss-flex twcss-flex-col twcss-items-start twcss-justify-between">
+          <div class="twcss-w-full twcss-h-full twcss-flex twcss-flex-col twcss-items-start">
+            <a href="/">
+              <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">Home</p>
+            </a>
+            <a href="/collections/all">
+              <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">Shop</p>
+            </a>
+            <a href="/collections/all">
+              <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">FAQ</p>
+            </a>
+            <a href="/collections/all">
+              <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">About Us</p>
+            </a>
+            <a href="/collections/all">
+              <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">Contact</p>
+            </a>
+            <span class="twcss-w-16 twcss-h-1 twcss-bg-white twcss-my-12"></span>
+            <a href="/collections/all">
+              <p class="twcss-text-2xl twcss-mb-6 twcss-text-white  twcss-font-medium twcss-opacity-80 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Visit us on Instagram</p>
+            </a>
+            <a href="/collections/all">
+              <p class="twcss-text-2xl twcss-mb-6 twcss-text-white  twcss-font-medium twcss-opacity-80 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Let us know your thoughts</p>
+            </a>
+          </div>
+          <div>
+            <p class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-white twcss-opacity-100 twcss-transition twcss-duration-300 hover:twcss-opacity-60">OyayKids</p>
+          </div>
+        </div>
+      </div>
+      <div id="slide-menu-drawer-mask" class="twcss-w-screen twcss-h-screen twcss-hidden twcss-fixed twcss-left-0 twcss-top-0 twcss-bg-zinc-900/80 twcss-z-20 twcss-opacity-0 transition durarion-300">
+        <p class="twcss-hidden">This is a mask only</p>
+      </div>
     {%- endif -%}
     <div id="menu-toggle" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
       <span>
-        {% render 'icon-hamburger' %}
+        {% comment %} {% render 'icon-hamburger' %} {% endcomment %}
+        <img src="{{ 'icon-menu.svg' | asset_url }}" width="24" height="24" alt="menu button" loading="lazy">
       </span>
     </div>
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
@@ -407,7 +445,7 @@
                 alt: logo_alt
               }}
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-sky-primary">{{ shop.name }}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -648,7 +686,7 @@
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span class="twcss-text-base" aria-hidden="true">{{ cart.item_count }}</span>
             {%- endif -%}
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
