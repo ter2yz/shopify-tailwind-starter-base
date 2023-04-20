@@ -34,20 +34,21 @@
 <div class="section-{{ section.id }}-padding">
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
-    <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
-      <form class="facets-vertical-form" id="FacetSortForm">
+    <facet-filters-form class="facets facets-vertical-sort small-hide no-js-hidden twcss-container">
+      <form class="facets-vertical-form twcss-items-center" id="FacetSortForm">
         <div class="facet-filters sorting caption">
           <div class="facet-filters__field">
             <h2 class="facet-filters__label caption-large text-body">
-              <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+              <label class="twcss-text-2xl twcss-font-light" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
             </h2>
             <div class="select">
               {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
               <select
                 name="sort_by"
-                class="facet-filters__sort select__select caption-large"
+                class="facet-filters__sort select__select caption-large twcss-font-light focus:twcss-shadow-none focus-visible:twcss-outline-none"
                 id="SortBy"
                 aria-describedby="a11y-refresh-page-message"
+                style="font-weight: 300;"
               >
                 {%- for option in collection.sort_options -%}
                   <option
@@ -70,9 +71,9 @@
           </noscript>
         </div>
 
-        <div class="product-count-vertical light" role="status">
+        <div class="product-count-vertical light twcss-hidden" role="status">
           <h2 class="product-count__text text-body">
-            <span id="ProductCountDesktop">
+            <span id="ProductCountDesktop" class="twcss-text-2xl twcss-font-light">
               {%- if collection.results_count -%}
                 {{
                   'templates.search.results_with_count'
@@ -104,7 +105,7 @@
     </facet-filters-form>
   {%- endif -%}
 
-  <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
+  <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical twcss-container{% endif %} twcss-mt-12">
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -128,13 +129,14 @@
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
-            <div class="title-wrapper center">
-              <h2 class="title title--primary">
+            <div class="title-wrapper twcss-text-center twcss-flex twcss-flex-col twcss-items-center">
+              <lottie-player src="{{ 'lottie_spaceman.json' | asset_url }}"  background="transparent"  speed="0.5"  style="width: 300px;"  loop autoplay></lottie-player>
+              <h2 class="twcss-font-light twcss-text-3xl">
                 {{ 'sections.collection_template.empty' | t -}}
                 <br>
                 {{
                   'sections.collection_template.use_fewer_filters_html'
-                  | t: link: collection.url, class: 'underlined-link link'
+                  | t: link: collection.url, class: 'underlined-link twcss-text-3xl twcss-underline'
                 }}
               </h2>
             </div>
@@ -157,7 +159,7 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 <li class="grid__item">
-                  {% render 'card-product',
+                  {% render 'oy-card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,

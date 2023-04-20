@@ -1,28 +1,36 @@
-<div class="twcss-w-full twcss-flex twcss-flex-col {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
-  <div class="twcss-w-full twcss-max-w-5xl">
+<div
+  class="twcss-w-full twcss-flex twcss-flex-col {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
+  <div
+    class="twcss-w-full twcss-max-w-5xl">
     {%- if section.settings.image != blank -%}
       <img
         src="{{ section.settings.image | image_url: width: 1500 }}"
         class="twcss-w-full twcss-h-full twcss-object-cover"
-        alt="">
+        alt=""
+        loading="lazy">
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
   </div>
-  <div class="twcss-w-full twcss-grow twcss-flex twcss-justify-center twcss-items-center twcss-py-40 twcss-px-16">
-    <div class="twcss-flex twcss-flex-col twcss-justify-start twcss-items-start twcss-max-w-4xl">
+  <div
+    class="twcss-w-full twcss-grow twcss-flex twcss-justify-center twcss-items-center twcss-py-40 twcss-px-16">
+    <div
+      class="twcss-flex twcss-flex-col twcss-justify-start twcss-items-start twcss-max-w-4xl">
       {%- for block in section.blocks -%}
         {% case block.type %}
           {%- when 'heading' -%}
-          <h2 class="twcss-font-young-serif twcss-font-bold twcss-text-8xl twcss-leading-snug twcss-mb-9">
+          <h2
+            class="twcss-font-young-serif twcss-font-bold twcss-text-8xl twcss-leading-snug twcss-mb-9">
             {{ block.settings.heading }}
           </h2>
           {%- when 'caption' -%}
-          <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">
+          <p
+            class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">
             {{ block.settings.caption | escape }}
           </p>
           {%- when 'text' -%}
-          <p class="twcss-mb-6">
+          <p
+            class="twcss-mb-6">
             {{ block.settings.text }}
           </p>
           {%- when 'button' -%}

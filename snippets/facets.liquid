@@ -126,7 +126,7 @@
                       aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})"
                     >
                       <div>
-                        <span>
+                        <span class="twcss-text-2xl">
                           {{- filter.label | escape }}
                           {%- if filter_type == 'vertical' -%}
                             <span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
@@ -204,7 +204,7 @@
                                     stroke-linejoin="round" />
                                 </svg>
 
-                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                <span class="twcss-text-2xl" aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -319,7 +319,7 @@
                   >
                     <summary class="facets__summary caption-large focus-offset">
                       <div>
-                        <span>{{ filter.label | escape }}</span>
+                        <span class="twcss-text-2xl">{{ filter.label | escape }}</span>
                         {% render 'icon-caret' %}
                       </div>
                     </summary>
@@ -649,7 +649,7 @@
                       >
                         <summary class="mobile-facets__summary focus-inset">
                           <div>
-                            <span>{{ filter.label | escape }}</span>
+                            <span class="twcss-text-2xl">{{ filter.label | escape }}</span>
                             <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
                             <noscript>{% render 'icon-caret' %}</noscript>
                           </div>
@@ -755,7 +755,7 @@
                       >
                         <summary class="mobile-facets__summary focus-inset">
                           <div>
-                            <span>{{ filter.label | escape }}</span>
+                            <span class="twcss-text-2xl">{{ filter.label | escape }}</span>
                             <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
                             <noscript>{% render 'icon-caret' %}</noscript>
                           </div>
@@ -1026,7 +1026,7 @@
     role="status"
   >
     <h2 class="product-count__text text-body">
-      <span id="ProductCount">
+      <span id="ProductCount" class="twcss-text-2xl">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
         {%- elsif results.products_count == results.all_products_count -%}
