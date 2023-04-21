@@ -2,9 +2,29 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "3952908a-11ca-40dd-870f-e84d8cc1cf0c": {
+      "type": "oy-page-header",
+      "blocks": {
+        "00f8511b-07c9-4b8d-a318-15d9e7851eb1": {
+          "type": "caption",
+          "settings": {
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "00f8511b-07c9-4b8d-a318-15d9e7851eb1"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg_color": "#f8fbf3"
       }
     },
     "form": {
@@ -20,6 +40,7 @@
   },
   "order": [
     "main",
+    "3952908a-11ca-40dd-870f-e84d8cc1cf0c",
     "form"
   ]
 }
