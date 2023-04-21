@@ -1067,6 +1067,34 @@ html p,
   margin-left: 0.75rem;
 }
 
+.twcss-mr-9 {
+  margin-right: 2.25rem;
+}
+
+.-twcss-mt-3 {
+  margin-top: -0.75rem;
+}
+
+.twcss-mr-12 {
+  margin-right: 3rem;
+}
+
+.twcss-mr-16 {
+  margin-right: 4rem;
+}
+
+.twcss-mr-0 {
+  margin-right: 0px;
+}
+
+.twcss-mt-6 {
+  margin-top: 1.5rem;
+}
+
+.twcss-mr-20 {
+  margin-right: 5rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -1123,6 +1151,30 @@ html p,
   width: 50%;
 }
 
+.twcss-w-48 {
+  width: 12rem;
+}
+
+.twcss-w-80 {
+  width: 20rem;
+}
+
+.twcss-w-96 {
+  width: 24rem;
+}
+
+.twcss-w-\[36rem\] {
+  width: 36rem;
+}
+
+.twcss-min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.twcss-min-w-\[350px\] {
+  min-width: 350px;
+}
+
 .twcss-max-w-4xl {
   max-width: 56rem;
 }
@@ -1145,6 +1197,10 @@ html p,
 
 .twcss-max-w-none {
   max-width: none;
+}
+
+.twcss-flex-none {
+  flex: none;
 }
 
 .twcss-grow {
@@ -1193,6 +1249,10 @@ html p,
   justify-content: space-between;
 }
 
+.twcss-justify-around {
+  justify-content: space-around;
+}
+
 .twcss-overflow-hidden {
   overflow: hidden;
 }
@@ -1203,6 +1263,10 @@ html p,
 
 .twcss-rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.twcss-rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .twcss-border-2 {
@@ -1333,6 +1397,10 @@ html p,
   padding-left: 0.75rem;
 }
 
+.twcss-text-left {
+  text-align: left;
+}
+
 .twcss-text-center {
   text-align: center;
 }
@@ -1383,6 +1451,11 @@ html p,
 .twcss-text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.twcss-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .twcss-font-semibold {
@@ -1872,6 +1945,14 @@ html p,
 
   .lg\:twcss-prose-xl :where(.twcss-prose-xl > :last-child):not(:where([class~="twcss-not-prose"] *)) {
     margin-bottom: 0;
+  }
+
+  .lg\:twcss-mr-16 {
+    margin-right: 4rem;
+  }
+
+  .lg\:twcss-mr-20 {
+    margin-right: 5rem;
   }
 
   .lg\:twcss-h-16 {
