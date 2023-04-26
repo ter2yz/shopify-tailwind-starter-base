@@ -36,18 +36,18 @@
   }
 {%- endstyle -%}
 
-<footer class="footer section-{{ section.id }}-padding twcss-bg-sky-primary">
-  <div class="twcss-container twcss-flex twcss-items-start twcss-justify-around">
-    <div class="twcss-mr-0 lg:twcss-mr-20 -twcss-mt-3">
+<footer class="footer twcss-w-full section-{{ section.id }}-padding twcss-bg-sky-primary">
+  <div class="twcss-container twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-center lg:twcss-items-start twcss-justify-around">
+    <div class="twcss-mr-0 lg:twcss-mr-20 -twcss-mt-3 twcss-mb-12 lg:twcss-mb-0">
       <a href="/" class=""><span class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-text-white">Oyaykids</span></a>
     </div>
-    <div class="footer-block--newsletter twcss-flex-none twcss-mr-0 lg:twcss-mr-20" style="align-items: start;">
+    <div class="footer-block--newsletter twcss-flex-none twcss-mr-0 twcss-mb-12 lg:twcss-mb-0 lg:twcss-mr-20" style="align-items: start;">
       {%- if section.settings.newsletter_enable -%}
         <div class="footer-block__newsletter">
           {%- if section.settings.newsletter_heading != blank -%}
-            <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white">{{ section.settings.newsletter_heading }}</p>
+            <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-center lg:twcss-text-left twcss-text-white">{{ section.settings.newsletter_heading }}</p>
           {%- endif -%}
-          {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form', style: 'margin: 0;' -%}
+          {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form oy-form', style: 'margin: 0;' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
               <div class="field">
@@ -87,7 +87,7 @@
               <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
             {%- endif -%}
           {%- endform -%}
-          <p class="twcss-text-2xl twcss-text-left twcss-text-white twcss-mt-6">We’ll never share your email address with third parties.</p>
+          <p class="twcss-text-2xl twcss-text-center lg:twcss-text-left twcss-text-white twcss-mt-6">We’ll never share your email address with third parties.</p>
         </div>
       {%- endif -%}
 
@@ -104,16 +104,18 @@
         {%- render 'social-icons' -%}
       {%- endif -%}
     </div>
-    <div class="twcss-mr-20 twcss-flex twcss-flex-col twcss-items-start">
-      <p class="twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-text-left twcss-text-white twcss-mb-9">Shop</p>
-      <a href="/collections/all" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">All</a>
-      <a href="/collections/popular" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Popular</a>
-      <a href="/collections/popular" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Schleich</a>
-    </div>
-    <div class="twcss-mr-20 twcss-flex twcss-flex-col twcss-items-start">
-      <p class="twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-text-left twcss-text-white twcss-mb-9">Links</p>
-      <a href="/pages/faqs" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">FAQs</a>
-      <a href="/pages/contact" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Contact</a>
+    <div class="twcss-flex twcss-items-start twcss-justify-between">
+      <div class="twcss-mr-20 twcss-flex twcss-flex-col twcss-items-start">
+        <p class="twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-text-left twcss-text-white twcss-mb-9">Shop</p>
+        <a href="/collections/all" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">All</a>
+        <a href="/collections/popular" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Popular</a>
+        <a href="/collections/popular" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Schleich</a>
+      </div>
+      <div class="twcss-mr-20 twcss-flex twcss-flex-col twcss-items-start">
+        <p class="twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-text-left twcss-text-white twcss-mb-9">Links</p>
+        <a href="/pages/faqs" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">FAQs</a>
+        <a href="/pages/contact" class="twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-left twcss-text-white twcss-opacity-60 twcss-transition twcss-duration-300 hover:twcss-opacity-100">Contact</a>
+      </div>
     </div>
   </div>
 

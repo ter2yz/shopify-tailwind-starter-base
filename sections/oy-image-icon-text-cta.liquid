@@ -18,16 +18,16 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'caption' -%}
-          <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold">{{ block.settings.caption }}</p>
+          <p class="twcss-uppercase twcss-text-2xl twcss-mb-6 twcss-font-semibold twcss-text-center">{{ block.settings.caption }}</p>
           {%- when 'icon' -%}
           <div class="twcss-max-w-[70px] twcss-mb-6">
             {{ block.settings.image_icon | image_url: width: 140 | image_tag }}
           </div>
           {%- when 'heading' -%}
-          <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ block.settings.heading }}</h3>
+          <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-6xl sm:twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ block.settings.heading }}</h3>
         {%- endcase -%}
       {%- endfor -%}
-      <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-start lg:twcss-justify-center">
+      <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-center">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'brand' -%}

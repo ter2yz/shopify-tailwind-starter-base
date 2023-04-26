@@ -995,6 +995,11 @@ html p,
   position: relative;
 }
 
+.twcss-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .twcss-inset-0 {
   top: 0px;
   right: 0px;
@@ -1016,6 +1021,10 @@ html p,
 
 .twcss-right-9 {
   right: 2.25rem;
+}
+
+.twcss-top-48 {
+  top: 12rem;
 }
 
 .twcss-z-50 {
@@ -1257,6 +1266,10 @@ html p,
   overflow: hidden;
 }
 
+.twcss-whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .twcss-rounded-2xl {
   border-radius: 1rem;
 }
@@ -1456,6 +1469,11 @@ html p,
 .twcss-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.twcss-text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .twcss-font-semibold {
@@ -1726,6 +1744,33 @@ html p,
   color: rgb(8 75 109 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:twcss-py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:twcss-px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:twcss-text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .sm\:twcss-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:twcss-text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:twcss-max-w-\[200px\] {
     max-width: 200px;
@@ -1955,6 +2000,10 @@ html p,
     margin-right: 5rem;
   }
 
+  .lg\:twcss-mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:twcss-h-16 {
     height: 4rem;
   }
@@ -1971,6 +2020,10 @@ html p,
     flex-direction: row-reverse;
   }
 
+  .lg\:twcss-items-start {
+    align-items: flex-start;
+  }
+
   .lg\:twcss-justify-center {
     justify-content: center;
   }
@@ -1978,5 +2031,14 @@ html p,
   .lg\:twcss-px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:twcss-text-left {
+    text-align: left;
+  }
+
+  .lg\:twcss-text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
