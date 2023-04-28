@@ -66,6 +66,10 @@
         "id": "image",
         "label": "t:sections.image-with-text.settings.image.label"
       }, {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      }, {
         "type": "select",
         "id": "layout",
         "options": [
@@ -165,6 +169,21 @@
             "type": "url",
             "id": "button_link",
             "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+          }
+        ]
+      }, {
+        "type": "service",
+        "name": "service",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }, {
+            "type": "text",
+            "id": "description",
+            "label": "Description"
           }
         ]
       }
