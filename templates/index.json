@@ -188,15 +188,24 @@
           "settings": {
             "text": "Ut urna scelerisque pellentesque id condimentum vitae nibh. Bibendum convallis odio blandit sem a, dictum sit."
           }
+        },
+        "cd0a9f99-6d15-4d63-bac9-9595608d3c39": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-headset.svg",
+            "description": "Excellent customer support."
+          }
         }
       },
       "block_order": [
         "e5824aad-66da-45d9-a531-119fae224127",
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0",
-        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1"
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1",
+        "cd0a9f99-6d15-4d63-bac9-9595608d3c39"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/little-boy-in-playground-looking-to-the-right.jpg",
+        "bg_color": "#f4fcff",
         "layout": "text_first"
       }
     },
