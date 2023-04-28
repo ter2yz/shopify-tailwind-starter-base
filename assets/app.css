@@ -1044,6 +1044,11 @@ html p,
   margin-bottom: 3rem;
 }
 
+.twcss-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .twcss-mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1102,6 +1107,10 @@ html p,
 
 .twcss-mr-20 {
   margin-right: 5rem;
+}
+
+.twcss-mr-6 {
+  margin-right: 1.5rem;
 }
 
 .twcss-block {
@@ -1228,6 +1237,10 @@ html p,
 
 .twcss-flex-col {
   flex-direction: column;
+}
+
+.twcss-flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .twcss-flex-wrap {
@@ -1755,6 +1768,11 @@ html p,
     padding-right: 1.5rem;
   }
 
+  .sm\:twcss-py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .sm\:twcss-text-8xl {
     font-size: 6rem;
     line-height: 1;
@@ -1774,6 +1792,14 @@ html p,
 @media (min-width: 768px) {
   .md\:twcss-max-w-\[200px\] {
     max-width: 200px;
+  }
+
+  .md\:twcss-flex-row {
+    flex-direction: row;
+  }
+
+  .md\:twcss-items-center {
+    align-items: center;
   }
 }
 
@@ -1992,6 +2018,11 @@ html p,
     margin-bottom: 0;
   }
 
+  .lg\:twcss-mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:twcss-mr-16 {
     margin-right: 4rem;
   }
@@ -2010,6 +2041,10 @@ html p,
 
   .lg\:twcss-w-1\/4 {
     width: 25%;
+  }
+
+  .lg\:twcss-max-w-5xl {
+    max-width: 64rem;
   }
 
   .lg\:twcss-flex-row {
@@ -2031,6 +2066,16 @@ html p,
   .lg\:twcss-px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:twcss-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:twcss-py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .lg\:twcss-text-left {

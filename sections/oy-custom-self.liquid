@@ -1,7 +1,7 @@
 <div
-  class="twcss-w-full twcss-flex twcss-flex-col {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
+  class="twcss-w-full twcss-flex twcss-flex-col-reverse {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch" style="background-color: {% if section.settings.bg_color %}{{section.settings.bg_color}}{% else %}#f8fbf3{% endif %}">
   <div
-    class="twcss-w-full twcss-max-w-5xl">
+    class="twcss-w-full twcss-max-w-5xl twcss-px-9 lg:twcss-px-0 twcss-mx-auto lg:twcss-mx-0">
     {%- if section.settings.image != blank -%}
       <img
         src="{{ section.settings.image | image_url: width: 1500 }}"
@@ -13,7 +13,7 @@
     {%- endif -%}
   </div>
   <div
-    class="twcss-w-full twcss-grow twcss-flex twcss-justify-center twcss-items-center twcss-py-40 twcss-px-16">
+    class="twcss-w-full twcss-grow twcss-flex twcss-justify-center twcss-items-center twcss-py-20 sm:twcss-py-40 twcss-px-16">
     <div
       class="twcss-flex twcss-flex-col twcss-justify-start twcss-items-start twcss-max-w-4xl">
       {%- for block in section.blocks -%}
@@ -49,6 +49,19 @@
           {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
+      <div class="twcss-w-full twcss-flex twcss-flex-col md:twcss-flex-row twcss-items-start md:twcss-items-center">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {%- when 'service' -%}
+          {%- if block.settings.icon -%}
+              <div class="twcss-flex twcss-justify-center twcss-items-center twcss-mt-6">
+                <div class="twcss-mr-6">{{ block.settings.icon | image_url: width: 48, height: 48 | image_tag }}</div>
+                <p class="twcss-text-3xl">{{ block.settings.description }}</p>
+              </div>
+          {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
@@ -173,7 +186,7 @@
         ]
       }, {
         "type": "service",
-        "name": "service",
+        "name": "Service",
         "limit": 2,
         "settings": [
           {
