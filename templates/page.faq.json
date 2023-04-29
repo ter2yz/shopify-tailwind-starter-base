@@ -50,10 +50,18 @@
             "blog": "faqs",
             "heading": "Shipping"
           }
+        },
+        "e52a4993-557f-47ca-9079-415c6c35b4e7": {
+          "type": "faq-section",
+          "settings": {
+            "blog": "faqs-payment",
+            "heading": "Payment"
+          }
         }
       },
       "block_order": [
-        "e9e1042b-0d9f-4bc5-9bb9-c92e95ab3678"
+        "e9e1042b-0d9f-4bc5-9bb9-c92e95ab3678",
+        "e52a4993-557f-47ca-9079-415c6c35b4e7"
       ],
       "settings": {
         "heading": "FAQs"
