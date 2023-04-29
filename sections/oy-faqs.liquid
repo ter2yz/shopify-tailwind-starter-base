@@ -1,5 +1,16 @@
 <section class="twcss-w-full">
     Hello FAQ Section
+    {%- for block in section.blocks -%}
+        {% case block.type %}
+            {%- when 'faq-section' -%}
+                {%- if block.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+                    {%- for article in section.settings.blog.articles -%}
+                        <p class="font-semibold mb-6">{{ article.title }}</p>
+                        <p class="">{{ article.content }}</p>
+                    {%- endfor -%}
+                {%- endif -%}
+        {%- endcase -%}
+    {%- endfor -%}
 </section>
 
 {% schema %}
@@ -16,6 +27,21 @@
           "default": "FAQs"
         }
       ],
+      "blocks": [{
+        "type": "faq-section",
+        "name": "FAQ Section",
+        "settings": [
+            {
+                "type": "blog",
+                "id": "blog",
+                "label": "FAQ Category"
+            }, {
+                "type": "text",
+                "id": "heading",
+                "label": "FAQ section heading"
+            }
+        ]
+      }],
       "presets": [
         {
           "name": "OY FAQ section"
