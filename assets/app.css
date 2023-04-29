@@ -1217,6 +1217,10 @@ html p,
   max-width: none;
 }
 
+.twcss-max-w-lg {
+  max-width: 32rem;
+}
+
 .twcss-flex-none {
   flex: none;
 }
@@ -1342,6 +1346,16 @@ html p,
 .twcss-bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.twcss-bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.twcss-bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .twcss-bg-cover {

@@ -1,16 +1,31 @@
 <section class="twcss-w-full">
     Hello FAQ Section
-    {%- for block in section.blocks -%}
-        {% case block.type %}
-            {%- when 'faq-section' -%}
-                {%- if block.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-                    {%- for article in section.settings.blog.articles -%}
-                        <p class="font-semibold mb-6">{{ article.title }}</p>
-                        <p class="">{{ article.content }}</p>
-                    {%- endfor -%}
-                {%- endif -%}
-        {%- endcase -%}
-    {%- endfor -%}
+    <div class="twcss-container">
+        <div class="twcss-w-full twcss-flex">
+            <div class="twcss-w-full twcss-max-w-lg twcss-bg-sky-500">
+                <p>Category</p>
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {%- when 'faq-section' -%}
+                            <p>{{ block.settings.heading }}</p>
+                    {%- endcase -%}
+                {%- endfor -%}
+            </div>
+            <div class="twcss-grow twcss-bg-slate-500">
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {%- when 'faq-section' -%}
+                            {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
+                                {%- for article in block.settings.blog.articles -%}
+                                    <p class="twcss-font-semibold twcss-mb-6">{{ article.title }}</p>
+                                    <p class="">{{ article.content }}</p>
+                                {%- endfor -%}
+                            {%- endif -%}
+                    {%- endcase -%}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
 </section>
 
 {% schema %}
