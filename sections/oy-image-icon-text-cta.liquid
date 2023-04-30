@@ -25,6 +25,20 @@
           </div>
           {%- when 'heading' -%}
           <h3 class="twcss-max-w-6xl twcss-text-center twcss-font-young-serif twcss-font-bold twcss-text-6xl sm:twcss-text-7xl twcss-leading-snug twcss-mb-9">{{ block.settings.heading }}</h3>
+          {%- when 'button' -%}
+            {%- if block.settings.button_label != blank -%}
+              <a
+                {% if block.settings.button_url == blank %}
+                role="link"
+                aria-disabled="true"
+                {% else %}
+                href="{{ block.settings.button_url }}"
+                {% endif %}
+                class="twcss-py-6 twcss-px-9 twcss-border-2 twcss-rounded-2xl twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-border-sky-primary twcss-w-auto twcss-font-jakarta twcss-bg-transparent twcss-text-sky-primary twcss-transition hover:twcss-bg-sky-primary hover:twcss-text-white"
+                {{ block.shopify_attributes }}>
+                {{ block.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
       <div class="twcss-w-full twcss-flex twcss-flex-wrap twcss-justify-center">
@@ -117,6 +131,20 @@
             "type": "url",
             "id": "image_link",
             "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button Url"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label"
           }
         ]
       }
