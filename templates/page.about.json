@@ -16,10 +16,36 @@
         "caption": "LEARNING THROUGH DOING",
         "description": "Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa."
       }
+    },
+    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "766907ae-b3c0-445b-89ff-e382eb41dda3": {
+          "type": "caption",
+          "settings": {
+            "caption": "We always hope everyone can be"
+          }
+        },
+        "2d9b1dc8-9ec3-4f1a-85b0-093e6fe36bf8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Learning through play, growing every day."
+          }
+        }
+      },
+      "block_order": [
+        "766907ae-b3c0-445b-89ff-e382eb41dda3",
+        "2d9b1dc8-9ec3-4f1a-85b0-093e6fe36bf8"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 88
+      }
     }
   },
   "order": [
     "main",
-    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31"
+    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31",
+    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1"
   ]
 }
