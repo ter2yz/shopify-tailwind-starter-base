@@ -7,9 +7,19 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31": {
+      "type": "oy-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/highwaykick1-kiwi-4.jpg",
+        "heading": "Let them play.",
+        "caption": "LEARNING THROUGH DOING",
+        "description": "Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31"
   ]
 }
