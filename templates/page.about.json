@@ -135,6 +135,46 @@
         "bg_color": "",
         "layout": "image_first"
       }
+    },
+    "aff2ff70-83ac-4001-ba00-71cd85846612": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "ca675653-a97e-4ba3-ba48-aaccb6cf06b7": {
+          "type": "icon",
+          "settings": {
+            "image_icon": "shopify:\/\/shop_images\/5ea62068808bdf13199607ba_icon-send-package.svg"
+          }
+        },
+        "23533e1f-0a65-4b89-a5fd-cd6ba57d1c7e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stress-free shopping, guaranteed."
+          }
+        },
+        "de9de1eb-6f67-42e9-99d5-5d3aa2197b0e": {
+          "type": "caption",
+          "settings": {
+            "caption": "We offer top-rated support and a fuss-free 30 day money-back guarantee."
+          }
+        },
+        "adedb8b0-e53b-4978-858d-f832e1672bcc": {
+          "type": "button",
+          "settings": {
+            "button_url": "shopify:\/\/collections\/all",
+            "button_label": "Start Shopping"
+          }
+        }
+      },
+      "block_order": [
+        "ca675653-a97e-4ba3-ba48-aaccb6cf06b7",
+        "23533e1f-0a65-4b89-a5fd-cd6ba57d1c7e",
+        "de9de1eb-6f67-42e9-99d5-5d3aa2197b0e",
+        "adedb8b0-e53b-4978-858d-f832e1672bcc"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -143,6 +183,7 @@
     "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1",
     "4ce81186-5df9-4e15-99ea-f990d16f20a5",
     "3586b8c0-8372-487c-9b8e-26928ef807c8",
-    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9"
+    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9",
+    "aff2ff70-83ac-4001-ba00-71cd85846612"
   ]
 }
