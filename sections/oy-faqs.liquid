@@ -1,45 +1,85 @@
-<section class="twcss-w-full">
-    Hello FAQ Section
-    <div class="twcss-container">
-        <div class="twcss-w-full twcss-flex">
-            <div class="twcss-w-full twcss-max-w-lg twcss-bg-sky-500">
-                <p>Category</p>
-                {%- for block in section.blocks -%}
-                    {% case block.type %}
-                        {%- when 'faq-section' -%}
-                            <p>{{ block.settings.heading }}</p>
-                    {%- endcase -%}
-                {%- endfor -%}
+{%- style -%}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+
+@media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+}
+{%- endstyle -%}
+<div class="twcss-w-full">
+    <div class="twcss-container section-{{ section.id }}-padding">
+        <div class="twcss-w-full twcss-flex twcss-items-start twcss-gap-x-16 twcss-sticky">
+            <div class="twcss-w-full twcss-max-w-lg twcss-sticky twcss-top-52">
+                <p class="twcss-font-semibold twcss-text-4xl twcss-mb-6">Category</p>
+                <div class="twcss-w-full twcss-flex-col twcss-items-start">
+                    {%- for block in section.blocks -%}
+                        {% case block.type %}
+                            {%- when 'faq-section' -%}
+                                <div class="twcss-mb-3">
+                                    <a class="twcss-font-semibold twcss-text-3xl twcss-opacity-60 tr" href="#{{ block.settings.blog.handle }}">{{ block.settings.heading }}</a>
+                                </div>
+                        {%- endcase -%}
+                    {%- endfor -%}
+                </div>
             </div>
-            <div class="twcss-grow twcss-bg-slate-500">
+            <div class="twcss-grow twcss-flex-col twcss-items-start">
                 {%- for block in section.blocks -%}
                     {% case block.type %}
                         {%- when 'faq-section' -%}
-                            {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
-                                {%- for article in block.settings.blog.articles -%}
-                                    <p class="twcss-font-semibold twcss-mb-6">{{ article.title }}</p>
-                                    <p class="">{{ article.content }}</p>
-                                {%- endfor -%}
-                            {%- endif -%}
+                            <div class="twcss-w-full twcss-mb-32">
+                                <h2 id="{{ block.settings.blog.handle }}" class="twcss-text-5xl sm:twcss-text-6xl twcss-font-young-serif twcss-mb-16">{{ block.settings.heading }}</h2>
+                                {%- if block.settings.blog != blank and block.settings.blog.articles_count > 0 -%}
+                                    {%- for article in block.settings.blog.articles -%}
+                                        <div class="twcss-w-full twcss-rounded-2xl twcss-bg-[#f4fcff] twcss-p-16 twcss-mb-12 twcss-border twcss-border-sky-primary/10">
+                                            <p class="twcss-font-semibold twcss-mb-12 twcss-text-sky-primary twcss-text-4xl">{{ article.title }}</p>
+                                            <p class="twcss-prose twcss-max-w-none twcss-text-sky-primary">{{ article.content | strip_newlines }}</p>
+                                        </div>
+                                    {%- endfor -%}
+                                {%- endif -%}
+                            </div>
                     {%- endcase -%}
                 {%- endfor -%}
             </div>
         </div>
     </div>
-</section>
+</div>
 
 {% schema %}
     {
       "name": "OY FAQ section",
+      "tag": "section",
       "class": "section",
       "disabled_on": {
         "groups": ["header", "footer"]
       },
       "settings": [{
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "FAQs"
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "FAQs"
+            }, {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 36
+        }, {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 36
         }
       ],
       "blocks": [{
