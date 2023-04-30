@@ -1507,6 +1507,10 @@ html p,
   line-height: 2.5rem;
 }
 
+.twcss-text-\[20px\] {
+  font-size: 20px;
+}
+
 .twcss-font-semibold {
   font-weight: 600;
 }
@@ -1771,6 +1775,15 @@ html p,
 }
 
 .prose-headings\:twcss-text-sky-primary :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="twcss-not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(8 75 109 / var(--tw-text-opacity));
+}
+
+.prose-p\:twcss-text-\[20px\] :is(:where(p):not(:where([class~="twcss-not-prose"] *))) {
+  font-size: 20px;
+}
+
+.prose-a\:twcss-text-sky-primary :is(:where(a):not(:where([class~="twcss-not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(8 75 109 / var(--tw-text-opacity));
 }

@@ -21,7 +21,7 @@
                         {% case block.type %}
                             {%- when 'faq-section' -%}
                                 <div class="twcss-mb-3">
-                                    <a class="twcss-font-semibold twcss-text-3xl twcss-opacity-60 tr" href="#{{ block.settings.blog.handle }}">{{ block.settings.heading }}</a>
+                                    <a class="twcss-font-semibold twcss-text-3xl twcss-opacity-60 transition twcss-duration-300 hover:twcss-opacity-100" href="#{{ block.settings.blog.handle }}">{{ block.settings.heading }}</a>
                                 </div>
                         {%- endcase -%}
                     {%- endfor -%}
