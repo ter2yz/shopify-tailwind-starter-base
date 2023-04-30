@@ -132,7 +132,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/jackie-hope-h0V-UV6Fa4Y-unsplash.jpg",
-        "bg_color": "",
+        "bg_color": "#fff5f5",
         "layout": "image_first"
       }
     },
