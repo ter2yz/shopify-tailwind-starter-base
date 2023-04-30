@@ -237,12 +237,20 @@
           "settings": {
             "caption": "We offer top-rated support and a fuss-free 30 day money-back guarantee."
           }
+        },
+        "309914cb-ba1b-41b9-91e4-cb8f7b7afbea": {
+          "type": "button",
+          "settings": {
+            "button_url": "shopify:\/\/pages\/faqs",
+            "button_label": "Read FAQ"
+          }
         }
       },
       "block_order": [
         "2e5d71fc-143d-46c3-bc8c-9f1888743e0f",
         "6c085261-664e-4ea5-ab7f-fc2e1c1c2cb5",
-        "a918b7f4-23fa-461c-9011-d6707016fd51"
+        "a918b7f4-23fa-461c-9011-d6707016fd51",
+        "309914cb-ba1b-41b9-91e4-cb8f7b7afbea"
       ],
       "settings": {
         "padding_top": 76,
