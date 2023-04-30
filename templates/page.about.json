@@ -93,6 +93,48 @@
         "bg_color": "#d3f0f9",
         "layout": "text_first"
       }
+    },
+    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We’re a top-tier retailer you know"
+          }
+        },
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "We're a top-tier retailer in the toy industry, committed to quality, innovation, and customer satisfaction. We invest heavily in research and development to create new and exciting products that kids love and provide exceptional customer service to ensure our customers are satisfied with their purchases."
+          }
+        },
+        "a9e1548a-be09-4c19-8bce-581f3734a7a2": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-headset.svg",
+            "description": "Excellent customer support."
+          }
+        },
+        "bfa7e975-728a-4c6d-ac62-d0fe822ab421": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-trolley.svg",
+            "description": "Fast shipping with package tracking."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-0",
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-1",
+        "a9e1548a-be09-4c19-8bce-581f3734a7a2",
+        "bfa7e975-728a-4c6d-ac62-d0fe822ab421"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jackie-hope-h0V-UV6Fa4Y-unsplash.jpg",
+        "bg_color": "",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
@@ -100,6 +142,7 @@
     "a22f4563-af6b-4f9e-a0be-13b08ce2fd31",
     "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1",
     "4ce81186-5df9-4e15-99ea-f990d16f20a5",
-    "3586b8c0-8372-487c-9b8e-26928ef807c8"
+    "3586b8c0-8372-487c-9b8e-26928ef807c8",
+    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9"
   ]
 }
