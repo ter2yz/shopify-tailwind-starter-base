@@ -41,11 +41,65 @@
         "padding_top": 100,
         "padding_bottom": 88
       }
+    },
+    "4ce81186-5df9-4e15-99ea-f990d16f20a5": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story"
+          }
+        },
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Oyaykids, we are passionate about creating the best toys for children. Our journey began last Autumn 2022 when our founders, Fiona and Hailey, realized that there was a need for toys that were not only fun but also helped children learn and develop. From there, we built a team of designers, child development experts, and toy enthusiasts who are dedicated to creating the best toys possible. Today, we are proud to have a range of toys that are loved by children and parents alike."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-0",
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/paige-cody-nLdDrH53BkA-unsplash.jpg",
+        "bg_color": "#fff3e1",
+        "layout": "image_first"
+      }
+    },
+    "3586b8c0-8372-487c-9b8e-26928ef807c8": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Values"
+          }
+        },
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Oyaykids, we believe that every child deserves to have access to toys that help them learn and grow. That's why we are committed to creating toys that are not only fun to play with but also promote key skills such as creativity, problem-solving, and socialization. We also believe in sustainability and are committed to reducing our environmental impact by using eco-friendly materials and packaging."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-0",
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/markus-spiske-OO89_95aUC0-unsplash.jpg",
+        "bg_color": "#d3f0f9",
+        "layout": "text_first"
+      }
     }
   },
   "order": [
     "main",
     "a22f4563-af6b-4f9e-a0be-13b08ce2fd31",
-    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1"
+    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1",
+    "4ce81186-5df9-4e15-99ea-f990d16f20a5",
+    "3586b8c0-8372-487c-9b8e-26928ef807c8"
   ]
 }
