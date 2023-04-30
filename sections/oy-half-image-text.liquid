@@ -49,12 +49,12 @@
           {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
-      <div class="twcss-w-full twcss-flex twcss-flex-col md:twcss-flex-row twcss-items-start md:twcss-items-center">
+      <div class="twcss-w-full twcss-flex twcss-flex-col md:twcss-flex-row twcss-items-start md:twcss-items-center twcss-flex-wrap">
       {%- for block in section.blocks -%}
         {% case block.type %}
           {%- when 'service' -%}
           {%- if block.settings.icon -%}
-              <div class="twcss-flex twcss-justify-center twcss-items-center twcss-mt-6">
+              <div class="twcss-w-1/2 twcss-flex twcss-justify-center twcss-items-center twcss-my-6">
                 <div class="twcss-mr-6">{{ block.settings.icon | image_url: width: 48, height: 48 | image_tag }}</div>
                 <p class="twcss-text-3xl">{{ block.settings.description }}</p>
               </div>
@@ -187,7 +187,6 @@
       }, {
         "type": "service",
         "name": "Service",
-        "limit": 2,
         "settings": [
           {
             "type": "image_picker",
