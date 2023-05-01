@@ -2130,12 +2130,32 @@ html p,
   border-color: rgb(8 75 109 / 0);
 }
 
+.twcss-group:hover .group-hover\:twcss-bg-sky-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 75 109 / var(--tw-bg-opacity));
+}
+
+.twcss-group:hover .group-hover\:twcss-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .twcss-group:hover .group-hover\:twcss-opacity-100 {
   opacity: 1;
 }
 
 .prose-headings\:twcss-font-young-serif :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="twcss-not-prose"] *))) {
   font-family: Young Serif, Georgia, sans-serif;
+}
+
+.prose-headings\:twcss-text-3xl :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="twcss-not-prose"] *))) {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.prose-headings\:twcss-text-5xl :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="twcss-not-prose"] *))) {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .prose-headings\:twcss-text-sky-primary :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="twcss-not-prose"] *))) {

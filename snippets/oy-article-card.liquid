@@ -23,7 +23,7 @@ Usage:
       assign ratio = media_aspect_ratio
     endif
   -%}
-    <div class="article-card-wrapper card-wrapper">
+    <div class="article-card-wrapper card-wrapper twcss-group">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div
       class="
@@ -77,7 +77,7 @@ Usage:
           </div>
         {%- endif -%}
         <div
-          class="card__content">
+          class="card__content twcss-opacity-0">
           <div
             class="card__information">
             <h3
@@ -169,8 +169,8 @@ Usage:
           <a
             role="link"
             aria-disabled="true"
-            class="twcss-py-6 twcss-px-9 twcss-mt-16 twcss-border-2 twcss-rounded-2xl twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-border-sky-primary twcss-w-auto twcss-font-jakarta twcss-bg-transparent twcss-text-sky-primary twcss-transition hover:twcss-bg-sky-primary hover:twcss-text-white">
-            Shop all
+            class="twcss-py-6 twcss-px-9 twcss-mt-16 twcss-border-2 twcss-rounded-2xl twcss-uppercase twcss-text-2xl twcss-font-semibold twcss-border-sky-primary twcss-w-auto twcss-font-jakarta twcss-bg-transparent twcss-text-sky-primary twcss-transition group-hover:twcss-bg-sky-primary group-hover:twcss-text-white">
+            Read Story
           </a>
         </div>
         {%- if show_badge -%}
