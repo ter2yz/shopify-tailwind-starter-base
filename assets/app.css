@@ -1438,12 +1438,26 @@ html p,
   border-radius: 0.5rem;
 }
 
+.twcss-rounded-b-2xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 .twcss-border {
   border-width: 1px;
 }
 
 .twcss-border-2 {
   border-width: 2px;
+}
+
+.twcss-border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.twcss-border-b {
+  border-bottom-width: 1px;
 }
 
 .twcss-border-sky-primary {
