@@ -1175,6 +1175,11 @@ html p,
   margin-bottom: 2.25rem;
 }
 
+.twcss-my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .-twcss-mt-3 {
   margin-top: -0.75rem;
 }
