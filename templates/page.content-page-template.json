@@ -28,12 +28,19 @@
           "settings": {
             "description": "{{ page.metafields.custom.description.value }}"
           }
+        },
+        "07828ca8-247d-48c8-9b04-057f79f5e22a": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
         }
       },
       "block_order": [
         "bd243b6c-6496-4ae3-980a-41cac36f4af8",
         "baa2bb1e-4a57-49ec-a4f6-c23a7a6caaba",
-        "ebf096eb-8092-4f47-a521-b13030d92308"
+        "ebf096eb-8092-4f47-a521-b13030d92308",
+        "07828ca8-247d-48c8-9b04-057f79f5e22a"
       ],
       "settings": {
         "padding_top": 36,
@@ -46,7 +53,7 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
-        "paragraph": ""
+        "paragraph": "<p>{{ page.title }}<\/p>"
       }
     }
   },
