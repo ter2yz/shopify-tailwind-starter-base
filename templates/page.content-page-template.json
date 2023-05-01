@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31": {
+      "type": "oy-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/highwaykick1-kiwi-4.jpg",
+        "heading": "Let them play.",
+        "caption": "LEARNING THROUGH DOING",
+        "description": "Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa."
+      }
+    },
+    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "766907ae-b3c0-445b-89ff-e382eb41dda3": {
+          "type": "caption",
+          "settings": {
+            "caption": "We always hope everyone can be"
+          }
+        },
+        "2d9b1dc8-9ec3-4f1a-85b0-093e6fe36bf8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Learning through play, growing every day."
+          }
+        }
+      },
+      "block_order": [
+        "766907ae-b3c0-445b-89ff-e382eb41dda3",
+        "2d9b1dc8-9ec3-4f1a-85b0-093e6fe36bf8"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 88
+      }
+    },
+    "4ce81186-5df9-4e15-99ea-f990d16f20a5": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "How We Got Started"
+          }
+        },
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Oyaykids, we are passionate about creating the best toys for children. Our journey began last Autumn 2022 when our founders, Fiona and Hailey, realized that there was a need for toys that were not only fun but also helped children learn and develop. From there, we built a team of designers, child development experts, and toy enthusiasts who are dedicated to creating the best toys possible. Today, we are proud to have a range of toys that are loved by children and parents alike."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-0",
+        "template--18756923326748__4ce81186-5df9-4e15-99ea-f990d16f20a5-1682867321c94b75ed-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/paige-cody-nLdDrH53BkA-unsplash.jpg",
+        "bg_color": "#fff3e1",
+        "layout": "image_first"
+      }
+    },
+    "3586b8c0-8372-487c-9b8e-26928ef807c8": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "What we value"
+          }
+        },
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Oyaykids, we believe that every child deserves to have access to toys that help them learn and grow. That's why we are committed to creating toys that are not only fun to play with but also promote key skills such as creativity, problem-solving, and socialization. We also believe in sustainability and are committed to reducing our environmental impact by using eco-friendly materials and packaging."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-0",
+        "template--18756923326748__3586b8c0-8372-487c-9b8e-26928ef807c8-1682867321c94b75ed-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/markus-spiske-OO89_95aUC0-unsplash.jpg",
+        "bg_color": "#d3f0f9",
+        "layout": "text_first"
+      }
+    },
+    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9": {
+      "type": "oy-half-image-text",
+      "blocks": {
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We’re a top-tier retailer you know"
+          }
+        },
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "We're a top-tier retailer in the toy industry, committed to quality, innovation, and customer satisfaction. We invest heavily in research and development to create new and exciting products that kids love and provide exceptional customer service to ensure our customers are satisfied with their purchases."
+          }
+        },
+        "a9e1548a-be09-4c19-8bce-581f3734a7a2": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-headset.svg",
+            "description": "Excellent customer support."
+          }
+        },
+        "bfa7e975-728a-4c6d-ac62-d0fe822ab421": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-trolley.svg",
+            "description": "Fast shipping with package tracking."
+          }
+        }
+      },
+      "block_order": [
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-0",
+        "template--18756923326748__70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9-1682867321c94b75ed-1",
+        "a9e1548a-be09-4c19-8bce-581f3734a7a2",
+        "bfa7e975-728a-4c6d-ac62-d0fe822ab421"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jackie-hope-h0V-UV6Fa4Y-unsplash.jpg",
+        "bg_color": "#fff5f5",
+        "layout": "image_first"
+      }
+    },
+    "aff2ff70-83ac-4001-ba00-71cd85846612": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "ca675653-a97e-4ba3-ba48-aaccb6cf06b7": {
+          "type": "icon",
+          "settings": {
+            "image_icon": "shopify:\/\/shop_images\/5ea62068808bdf13199607ba_icon-send-package.svg"
+          }
+        },
+        "23533e1f-0a65-4b89-a5fd-cd6ba57d1c7e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stress-free shopping, guaranteed."
+          }
+        },
+        "de9de1eb-6f67-42e9-99d5-5d3aa2197b0e": {
+          "type": "caption",
+          "settings": {
+            "caption": "We offer top-rated support and a fuss-free 30 day money-back guarantee."
+          }
+        },
+        "adedb8b0-e53b-4978-858d-f832e1672bcc": {
+          "type": "button",
+          "settings": {
+            "button_url": "shopify:\/\/collections\/all",
+            "button_label": "Start Shopping"
+          }
+        }
+      },
+      "block_order": [
+        "ca675653-a97e-4ba3-ba48-aaccb6cf06b7",
+        "23533e1f-0a65-4b89-a5fd-cd6ba57d1c7e",
+        "de9de1eb-6f67-42e9-99d5-5d3aa2197b0e",
+        "adedb8b0-e53b-4978-858d-f832e1672bcc"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a22f4563-af6b-4f9e-a0be-13b08ce2fd31",
+    "de4687df-7f6c-4c6d-8457-2b0c8c3d8ac1",
+    "4ce81186-5df9-4e15-99ea-f990d16f20a5",
+    "3586b8c0-8372-487c-9b8e-26928ef807c8",
+    "70c4a4cd-180d-4c45-8f9b-9ddfda08bfa9",
+    "aff2ff70-83ac-4001-ba00-71cd85846612"
+  ]
+}
