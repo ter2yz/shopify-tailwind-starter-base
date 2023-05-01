@@ -6,19 +6,19 @@
         "13aaf4d2-0e9c-4d8e-88cc-7cdc7d78eeb8": {
           "type": "caption",
           "settings": {
-            "caption": "News"
+            "caption": "{{ blog.title }}"
           }
         },
         "e8f43639-2b4a-4a26-a248-fb80a4249b9c": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Our Latest Stories"
+            "heading": "{{ blog.metafields.custom.page_heading.value }}"
           }
         },
         "b8cd5556-1bb2-4c51-9fd3-c112649cebca": {
           "type": "description",
           "settings": {
-            "description": "Stay up-to-date with the latest trends and insights in Oyaykids by exploring our collection of informative and engaging blog posts."
+            "description": "{{ blog.metafields.custom.page_description.value }}"
           }
         }
       },
