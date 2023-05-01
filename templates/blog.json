@@ -1,5 +1,38 @@
 {
   "sections": {
+    "1d5221db-eb9b-4c8e-b3cb-d35db9e26145": {
+      "type": "oy-page-header",
+      "blocks": {
+        "13aaf4d2-0e9c-4d8e-88cc-7cdc7d78eeb8": {
+          "type": "caption",
+          "settings": {
+            "caption": "News"
+          }
+        },
+        "e8f43639-2b4a-4a26-a248-fb80a4249b9c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Discover Our Latest Stories"
+          }
+        },
+        "b8cd5556-1bb2-4c51-9fd3-c112649cebca": {
+          "type": "description",
+          "settings": {
+            "description": "Stay up-to-date with the latest trends and insights in Oyaykids by exploring our collection of informative and engaging blog posts."
+          }
+        }
+      },
+      "block_order": [
+        "13aaf4d2-0e9c-4d8e-88cc-7cdc7d78eeb8",
+        "e8f43639-2b4a-4a26-a248-fb80a4249b9c",
+        "b8cd5556-1bb2-4c51-9fd3-c112649cebca"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg_color": "#f8fbf3"
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -31,6 +64,7 @@
     }
   },
   "order": [
+    "1d5221db-eb9b-4c8e-b3cb-d35db9e26145",
     "main",
     "b22d4002-a78c-4596-a0a3-44afdb7030f3"
   ]
