@@ -53,7 +53,7 @@
 <div
   class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div
-    class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+    class="twcss-container isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
       <div
         class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -80,13 +80,13 @@
         class="slider-mobile-gutter">
         <ul
           id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %} twcss-flex twcss-flex-wrap twcss-items-stretch"
           role="list">
           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
             <li
               id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="blog__post grid__item article slider__slide slider__slide--full-width">
-              {% render 'article-card'
+              class="blog__post article slider__slide slider__slide--full-width twcss-w-full md:twcss-w-1/2 md:odd:twcss-pr-12 md:even:twcss-pl-12 twcss-mb-32">
+              {% render 'oy-article-card'
                , blog: section.settings.blog,
                article: article,
                media_aspect_ratio: 1.66,
