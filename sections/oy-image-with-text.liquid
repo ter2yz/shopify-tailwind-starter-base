@@ -1,5 +1,5 @@
-<div class="twcss-w-full twcss-flex twcss-flex-col {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
-  <div class="twcss-w-full twcss-max-w-5xl">
+<div class="twcss-w-full twcss-flex twcss-flex-col-reverse {% if section.settings.layout == 'text_first' %}lg:twcss-flex-row-reverse{% else %}lg:twcss-flex-row{% endif %} twcss-items-stretch twcss-bg-[#f8fbf3]">
+  <div class="twcss-w-full twcss-max-w-5xl twcss-px-9 lg:twcss-px-0 twcss-mx-auto lg:twcss-mx-0">
     {%- if section.settings.image != blank -%}
       <img
         src="{{ section.settings.image | image_url: width: 1500 }}"
