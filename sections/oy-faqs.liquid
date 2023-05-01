@@ -13,8 +13,8 @@
 {%- endstyle -%}
 <div class="twcss-w-full">
     <div class="twcss-container section-{{ section.id }}-padding">
-        <div class="twcss-w-full twcss-flex twcss-items-start twcss-gap-x-16 twcss-sticky">
-            <div class="twcss-w-full twcss-max-w-lg twcss-sticky twcss-top-52">
+        <div class="twcss-w-full twcss-flex twcss-flex-col md:twcss-flex-row twcss-items-start twcss-gap-x-16 twcss-sticky">
+            <div class="twcss-w-full twcss-max-w-lg md:twcss-sticky twcss-top-52 twcss-mb-12">
                 <p class="twcss-font-semibold twcss-text-4xl twcss-mb-6">Category</p>
                 <div class="twcss-w-full twcss-flex-col twcss-items-start">
                     {%- for block in section.blocks -%}
