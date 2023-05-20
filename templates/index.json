@@ -42,71 +42,6 @@
         "layout": "image_first"
       }
     },
-    "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
-      "type": "oy-image-icon-text-cta",
-      "blocks": {
-        "99f20ebe-819b-4c7c-ad13-42c03cfb6fca": {
-          "type": "heading",
-          "settings": {
-            "heading": "Most Popular Brands"
-          }
-        },
-        "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
-          "type": "brand",
-          "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich.png",
-            "image_link": "https:\/\/www.scootandride.at\/"
-          }
-        },
-        "cda1b07f-59a9-4d46-829b-8c1148edb622": {
-          "type": "brand",
-          "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-ambi_toys.png",
-            "image_link": ""
-          }
-        },
-        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865": {
-          "type": "brand",
-          "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-mideer.png",
-            "image_link": ""
-          }
-        },
-        "2d8ec2fe-8da2-4cf5-b41e-c20baf70581d": {
-          "type": "brand",
-          "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/5_1080x_jpg_be5e4f83-62d0-43ba-a913-b59a07e30cc6.webp",
-            "image_link": ""
-          }
-        },
-        "3a56c65b-55d9-4aff-9077-db7641645f3c": {
-          "type": "brand",
-          "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/76acf7_50fc4632c833494fbeea8b2da8ac8181_mv2_d_1920_1920_s_2_jpg_b59728fc-0a2b-43a5-a242-c89a83de0174.webp",
-            "image_link": ""
-          }
-        },
-        "4503d65a-e68d-4ad8-92da-50a4683b7f96": {
-          "type": "brand",
-          "settings": {
-            "image_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "99f20ebe-819b-4c7c-ad13-42c03cfb6fca",
-        "dfcfd393-00a9-4459-8294-1b3ba70b7726",
-        "cda1b07f-59a9-4d46-829b-8c1148edb622",
-        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865",
-        "2d8ec2fe-8da2-4cf5-b41e-c20baf70581d",
-        "3a56c65b-55d9-4aff-9077-db7641645f3c",
-        "4503d65a-e68d-4ad8-92da-50a4683b7f96"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 60
-      }
-    },
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf": {
       "type": "oy-feature-collection",
       "settings": {
@@ -132,6 +67,55 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
+      "type": "oy-image-icon-text-cta",
+      "blocks": {
+        "d6843546-0640-4bff-bff6-42e657e0affe": {
+          "type": "caption",
+          "settings": {
+            "caption": "LEARNING THROUGH DOING"
+          }
+        },
+        "99f20ebe-819b-4c7c-ad13-42c03cfb6fca": {
+          "type": "heading",
+          "settings": {
+            "heading": "“Wow, these toys are so well made, my kids are loving them!”"
+          }
+        },
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
+          "type": "brand",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich.png",
+            "image_link": "https:\/\/www.scootandride.at\/"
+          }
+        },
+        "cda1b07f-59a9-4d46-829b-8c1148edb622": {
+          "type": "brand",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-ambi_toys.png",
+            "image_link": ""
+          }
+        },
+        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865": {
+          "type": "brand",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-mideer.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "d6843546-0640-4bff-bff6-42e657e0affe",
+        "99f20ebe-819b-4c7c-ad13-42c03cfb6fca",
+        "dfcfd393-00a9-4459-8294-1b3ba70b7726",
+        "cda1b07f-59a9-4d46-829b-8c1148edb622",
+        "dc28e2fb-cc2f-43a7-a8f4-2b719316b865"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 60
       }
     },
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
@@ -276,8 +260,8 @@
   },
   "order": [
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
-    "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
+    "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
     "e30789c7-a70d-47bf-a118-6fea3f9a2347",
     "40ba320b-cdd0-4772-bc1a-531bd6a1630e",

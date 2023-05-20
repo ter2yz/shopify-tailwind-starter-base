@@ -33,7 +33,7 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'lottie-player.js' | asset_url }}" defer="defer"></script>
-    {% include 'globo.filter.script' %}{{ content_for_header }}
+    {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -295,6 +295,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  {% include 'globo.filter.action' %}
-	</body>
+  </body>
 </html>
