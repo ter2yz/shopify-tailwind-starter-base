@@ -45,16 +45,10 @@
     "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
       "type": "oy-image-icon-text-cta",
       "blocks": {
-        "d6843546-0640-4bff-bff6-42e657e0affe": {
-          "type": "caption",
-          "settings": {
-            "caption": "LEARNING THROUGH DOING"
-          }
-        },
         "99f20ebe-819b-4c7c-ad13-42c03cfb6fca": {
           "type": "heading",
           "settings": {
-            "heading": "“Wow, these toys are so well made, my kids are loving them!”"
+            "heading": "Most Popular Brands"
           }
         },
         "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
@@ -100,7 +94,6 @@
         }
       },
       "block_order": [
-        "d6843546-0640-4bff-bff6-42e657e0affe",
         "99f20ebe-819b-4c7c-ad13-42c03cfb6fca",
         "dfcfd393-00a9-4459-8294-1b3ba70b7726",
         "cda1b07f-59a9-4d46-829b-8c1148edb622",
