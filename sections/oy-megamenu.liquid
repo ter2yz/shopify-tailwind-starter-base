@@ -14,17 +14,17 @@
 {% if template contains 'collection' %}
 {% assign current_collection = collection %}
 {% endif %}
-<div class="twcss-w-full">
+<div class="twcss-w-full twcss-bg-amber-primary">
     <div class="twcss-container section-{{ section.id }}-padding">
-        <nav class="twcss-bg-white twcss-border-gray-200 twcss-flex twcss-justify-center">
+        <nav class="twcss-border-gray-200 twcss-flex twcss-justify-center">
             <ul class="twcss-flex twcss-justify-start twcss-items-center twcss-gap-6 twcss-flex-wrap">
                 {%- for block in section.blocks -%}
                     {% case block.type %}
                         {%- when 'menu-item' -%}
                             {% if block.settings.first-lv-url %}
-                            <a class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-font-normal twcss-text-sky-primary twcss-whitespace-nowrap" href="{{ block.settings.first-lv-url | url_escape }}">{{ block.settings.first-lv-label }}</a>
+                            <a class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-font-normal twcss-text-amber-dark twcss-whitespace-nowrap twcss-transition hover:twcss-text-amber-secondary" href="{{ block.settings.first-lv-url | url_escape }}">{{ block.settings.first-lv-label }}</a>
                             {%  else %}
-                            <li class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-group twcss-cursor-default twcss-text-sky-primary twcss-whitespace-nowrap">
+                            <li class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-group twcss-cursor-default twcss-text-amber-dark twcss-whitespace-nowrap twcss-transition hover:twcss-text-amber-secondary">
                                 {{ block.settings.first-lv-label }}
                                 {% if block.settings.collection-list.count > 0 %}
                                 <svg aria-hidden="true" class="twcss-w-5 twcss-h-5 twcss-ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -32,7 +32,7 @@
                                     <div class="twcss-min-w-min twcss-overflow-hidden twcss-shadow-lg twcss-bg-transparent twcss-rounded-xl">
                                         <div class="twcss-flex twcss-flex-wrap twcss-bg-white twcss-border twcss-border-gray-100 twcss-rounded-xl twcss-p-6">
                                             {% for singleCollection in block.settings.collection-list %}
-                                            <a class="twcss-w-full twcss-px-6 twcss-py-3" href="{{ singleCollection.url | url_escape }}">
+                                            <a class="twcss-w-full twcss-px-6 twcss-py-3 twcss-rounded-md twcss-bg-transparent twcss-transition hover:twcss-bg-amber-light" href="{{ singleCollection.url | url_escape }}">
                                                 <p class="twcss-text-2xl twcss-whitespace-nowrap {% if current_collection.handle == singleCollection.handle %}twcss-text-orange-600{% endif %}">{{ singleCollection.title }}</p>
                                             </a>
                                             {% endfor %}

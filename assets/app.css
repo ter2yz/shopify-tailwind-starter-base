@@ -437,7 +437,7 @@ html h1,
   html h6,
   html a,
   html p {
-  color: #084b6d;
+  color: #3D342A;
 }
 
 html p,
@@ -1102,10 +1102,6 @@ html p,
   pointer-events: none;
 }
 
-.twcss-visible {
-  visibility: visible;
-}
-
 .twcss-fixed {
   position: fixed;
 }
@@ -1490,6 +1486,10 @@ html p,
   border-radius: 0.5rem;
 }
 
+.twcss-rounded-md {
+  border-radius: 0.375rem;
+}
+
 .twcss-rounded-xl {
   border-radius: 0.75rem;
 }
@@ -1514,6 +1514,11 @@ html p,
 
 .twcss-border-b {
   border-bottom-width: 1px;
+}
+
+.twcss-border-amber-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(164 108 89 / var(--tw-border-opacity));
 }
 
 .twcss-border-gray-100 {
@@ -1544,18 +1549,23 @@ html p,
   background-color: rgb(244 252 255 / var(--tw-bg-opacity));
 }
 
-.twcss-bg-\[\#f8fbf3\] {
+.twcss-bg-amber-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 251 243 / var(--tw-bg-opacity));
+  background-color: rgb(255 248 240 / var(--tw-bg-opacity));
+}
+
+.twcss-bg-amber-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 223 210 / var(--tw-bg-opacity));
+}
+
+.twcss-bg-amber-secondary\/80 {
+  background-color: rgb(164 108 89 / 0.8);
 }
 
 .twcss-bg-sky-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(8 75 109 / var(--tw-bg-opacity));
-}
-
-.twcss-bg-sky-primary\/80 {
-  background-color: rgb(8 75 109 / 0.8);
 }
 
 .twcss-bg-transparent {
@@ -1763,6 +1773,16 @@ html p,
 
 .twcss-leading-snug {
   line-height: 1.375;
+}
+
+.twcss-text-amber-dark {
+  --tw-text-opacity: 1;
+  color: rgb(61 52 42 / var(--tw-text-opacity));
+}
+
+.twcss-text-amber-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(164 108 89 / var(--tw-text-opacity));
 }
 
 .twcss-text-orange-600 {
@@ -2168,13 +2188,28 @@ html p,
   }
 }
 
+.hover\:twcss-bg-amber-light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 248 240 / var(--tw-bg-opacity));
+}
+
+.hover\:twcss-bg-amber-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 108 89 / var(--tw-bg-opacity));
+}
+
+.hover\:twcss-bg-amber-secondary\/100:hover {
+  background-color: rgb(164 108 89 / 1);
+}
+
 .hover\:twcss-bg-sky-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(8 75 109 / var(--tw-bg-opacity));
 }
 
-.hover\:twcss-bg-sky-primary\/100:hover {
-  background-color: rgb(8 75 109 / 1);
+.hover\:twcss-text-amber-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(164 108 89 / var(--tw-text-opacity));
 }
 
 .hover\:twcss-text-white:hover {

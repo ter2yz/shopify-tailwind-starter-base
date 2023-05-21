@@ -55,7 +55,7 @@
                   id="NewsletterForm--{{ section.id }}"
                   type="email"
                   name="contact[email]"
-                  style="min-width: 300px; border-radius: 1rem; background-color: transparent; color: #fff; border: 1px solid #ffffff; padding: 2.75rem 2.25rem;"
+                  style="min-width: 300px; border-radius: 1rem; background-color: transparent; color: #fff; border: 1px solid #ffffff;"
                   class="field__input twcss-w-[36rem] twcss-rounded-lg"
                   value="{{ form.email }}"
                   aria-required="true"
@@ -72,7 +72,7 @@
                   placeholder="{{ 'newsletter.label' | t }}"
                   required
                 >
-                <label class="field__label" for="NewsletterForm--{{ section.id }}" style="color: #ffffff;top:50%;transform:translateY(-50%)">
+                <label class="field__label" for="NewsletterForm--{{ section.id }}" style="color: #ffffff;">
                   {{ 'newsletter.label' | t }}
                 </label>
                 <button type="submit" class="newsletter-form__button field__button" style="color: #ffffff;" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">

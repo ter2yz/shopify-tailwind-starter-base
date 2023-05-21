@@ -342,7 +342,8 @@
     <div id="menu-toggle" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
       <span>
         {% comment %} {% render 'icon-hamburger' %} {% endcomment %}
-        <img src="{{ 'icon-menu.svg' | asset_url }}" width="24" height="24" alt="menu button" loading="lazy">
+        {% comment %} <img src="{{ 'icon-menu.svg' | asset_url }}" width="24" height="24" alt="menu button" loading="lazy"> {% endcomment %}
+        <img src="{{ 'hh-kids-logo.png' | asset_url }}" width="59" height="59" alt="menu button" loading="lazy">
       </span>
     </div>
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
@@ -445,7 +446,7 @@
                 alt: logo_alt
               }}
             {%- else -%}
-              <span class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-sky-primary">{{ shop.name }}</span>
+              <span class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-mb-3 twcss-text-amber-secondary">{{ shop.name }}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
