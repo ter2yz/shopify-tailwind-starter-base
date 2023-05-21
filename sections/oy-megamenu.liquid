@@ -11,6 +11,9 @@
     }
 }
 {%- endstyle -%}
+{% if template contains 'collection' %}
+{% assign current_collection = collection %}
+{% endif %}
 <div class="twcss-w-full">
     <div class="twcss-container section-{{ section.id }}-padding">
         <nav class="twcss-bg-white twcss-border-gray-200 twcss-flex twcss-justify-center">
@@ -30,7 +33,7 @@
                                         <div class="twcss-flex twcss-flex-wrap twcss-bg-white twcss-border twcss-border-gray-100 twcss-rounded-xl twcss-p-6">
                                             {% for singleCollection in block.settings.collection-list %}
                                             <a class="twcss-w-full twcss-px-6 twcss-py-3" href="{{ singleCollection.url | url_escape }}">
-                                                <p class="twcss-text-2xl twcss-whitespace-nowrap">{{ singleCollection.title }}</p>
+                                                <p class="twcss-text-2xl twcss-whitespace-nowrap {% if current_collection.handle == singleCollection.handle %}twcss-text-orange-600{% endif %}">{{ singleCollection.title }}</p>
                                             </a>
                                             {% endfor %}
                                         </div>

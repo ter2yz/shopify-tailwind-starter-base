@@ -1159,16 +1159,12 @@ html p,
   z-index: 20;
 }
 
-.twcss-z-50 {
-  z-index: 50;
-}
-
 .twcss-z-30 {
   z-index: 30;
 }
 
-.twcss-z-40 {
-  z-index: 40;
+.twcss-z-50 {
+  z-index: 50;
 }
 
 .twcss-mx-auto {
@@ -1464,14 +1460,6 @@ html p,
 
 .twcss-overflow-hidden {
   overflow: hidden;
-}
-
-.twcss-overflow-x-auto {
-  overflow-x: auto;
-}
-
-.twcss-overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .twcss-scroll-smooth {
@@ -1787,6 +1775,11 @@ html p,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.twcss-text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .twcss-underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1847,18 +1840,7 @@ html p,
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 /* Hide scrollbar for IE, Edge and Firefox */
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
 
 /* Font Face setting - Young Serif */
 
