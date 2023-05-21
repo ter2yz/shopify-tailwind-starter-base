@@ -1,0 +1,176 @@
+{%- style -%}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+
+@media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+}
+{%- endstyle -%}
+<div class="twcss-w-full">
+    <div class="twcss-container section-{{ section.id }}-padding">
+        <nav class="twcss-bg-white twcss-border-gray-200 dark:twcss-bg-gray-900">
+            <div class="twcss-flex twcss-flex-wrap twcss-items-center twcss-justify-between twcss-max-w-screen-xl twcss-mx-auto twcss-p-4">
+                <a href="https://flowbite.com" class="twcss-flex twcss-items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="twcss-h-8 twcss-mr-3" alt="Flowbite Logo" />
+                    <span class="twcss-self-center twcss-text-2xl twcss-font-semibold twcss-whitespace-nowrap dark:twcss-text-white">Flowbite</span>
+                </a>
+                <div class="twcss-flex twcss-items-center md:twcss-order-2">
+                    <a href="#" class="twcss-text-gray-800 dark:twcss-text-white hover:twcss-bg-gray-50 focus:twcss-ring-4 focus:twcss-ring-gray-300 twcss-font-medium twcss-rounded-lg twcss-text-sm twcss-px-4 twcss-py-2 md:twcss-px-5 md:twcss-py-2.5 twcss-mr-1 md:twcss-mr-2 dark:hover:twcss-bg-gray-700 focus:twcss-outline-none dark:focus:twcss-ring-gray-800">Login</a>
+                    <a href="#" class="twcss-text-white twcss-bg-blue-700 hover:twcss-bg-blue-800 focus:twcss-ring-4 focus:twcss-ring-blue-300 twcss-font-medium twcss-rounded-lg twcss-text-sm twcss-px-4 twcss-py-2 md:twcss-px-5 md:twcss-py-2.5 twcss-mr-1 md:twcss-mr-2 dark:twcss-bg-blue-600 dark:hover:twcss-bg-blue-700 focus:twcss-outline-none dark:focus:twcss-ring-blue-800">Sign up</a>
+                    <button data-collapse-toggle="mega-menu" type="button" class="twcss-inline-flex twcss-items-center twcss-p-2 twcss-ml-1 twcss-text-sm twcss-text-gray-500 twcss-rounded-lg md:twcss-hidden hover:twcss-bg-gray-100 focus:twcss-outline-none focus:twcss-ring-2 focus:twcss-ring-gray-200 dark:twcss-text-gray-400 dark:hover:twcss-bg-gray-700 dark:focus:twcss-ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+                        <span class="twcss-sr-only">Open main menu</span>
+                        <svg aria-hidden="true" class="twcss-w-6 twcss-h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div id="mega-menu" class="twcss-items-center twcss-justify-between twcss-hidden twcss-w-full md:twcss-flex md:twcss-w-auto md:twcss-order-1">
+                    <ul class="twcss-flex twcss-flex-col twcss-mt-4 twcss-font-medium md:twcss-flex-row md:twcss-space-x-8 md:twcss-mt-0">
+                        <li>
+                            <a href="#" class="twcss-block twcss-py-2 twcss-pl-3 twcss-pr-4 twcss-text-blue-600 twcss-border-b twcss-border-gray-100 hover:twcss-bg-gray-50 md:hover:twcss-bg-transparent md:twcss-border-0 md:hover:twcss-text-blue-600 md:twcss-p-0 dark:twcss-text-blue-500 md:dark:hover:twcss-text-blue-500 dark:hover:twcss-bg-gray-700 dark:hover:twcss-text-blue-500 md:dark:hover:twcss-bg-transparent dark:twcss-border-gray-700" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="twcss-flex twcss-items-center twcss-justify-between twcss-w-full twcss-py-2 twcss-pl-3 twcss-pr-4 twcss-font-medium twcss-text-gray-900 twcss-border-b twcss-border-gray-100 md:twcss-w-auto hover:twcss-bg-gray-50 md:hover:twcss-bg-transparent md:twcss-border-0 md:hover:twcss-text-blue-600 md:twcss-p-0 dark:twcss-text-white md:dark:hover:twcss-text-blue-500 dark:hover:twcss-bg-gray-700 dark:hover:twcss-text-blue-500 md:dark:hover:twcss-bg-transparent dark:twcss-border-gray-700">
+                                Company <svg aria-hidden="true" class="twcss-w-5 twcss-h-5 twcss-ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                            <div id="mega-menu-dropdown" class="twcss-absolute twcss-z-10 twcss-grid twcss-hidden twcss-w-auto twcss-grid-cols-2 twcss-text-sm twcss-bg-white twcss-border twcss-border-gray-100 twcss-rounded-lg twcss-shadow-md dark:twcss-border-gray-700 md:twcss-grid-cols-3 dark:twcss-bg-gray-700">
+                                <div class="twcss-p-4 twcss-pb-0 twcss-text-gray-900 md:twcss-pb-4 dark:twcss-text-white">
+                                    <ul class="twcss-space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Library
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Resources
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Pro Version
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="twcss-p-4 twcss-pb-0 twcss-text-gray-900 md:twcss-pb-4 dark:twcss-text-white">
+                                    <ul class="twcss-space-y-4">
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Newsletter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Playground
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                License
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="twcss-p-4">
+                                    <ul class="twcss-space-y-4">
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Support Center
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twcss-text-gray-500 dark:twcss-text-gray-400 hover:twcss-text-blue-600 dark:hover:twcss-text-blue-500">
+                                                Terms
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="twcss-block twcss-py-2 twcss-pl-3 twcss-pr-4 twcss-text-gray-900 twcss-border-b twcss-border-gray-100 hover:twcss-bg-gray-50 md:hover:twcss-bg-transparent md:twcss-border-0 md:hover:twcss-text-blue-600 md:twcss-p-0 dark:twcss-text-white md:dark:hover:twcss-text-blue-500 dark:hover:twcss-bg-gray-700 dark:hover:twcss-text-blue-500 md:dark:hover:twcss-bg-transparent dark:twcss-border-gray-700">Team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="twcss-block twcss-py-2 twcss-pl-3 twcss-pr-4 twcss-text-gray-900 twcss-border-b twcss-border-gray-100 hover:twcss-bg-gray-50 md:hover:twcss-bg-transparent md:twcss-border-0 md:hover:twcss-text-blue-600 md:twcss-p-0 dark:twcss-text-white md:dark:hover:twcss-text-blue-500 dark:hover:twcss-bg-gray-700 dark:hover:twcss-text-blue-500 md:dark:hover:twcss-bg-transparent dark:twcss-border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "OY Mega menu",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "FAQs"
+        }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+    }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+    }
+    ],
+    "blocks": [{
+    "type": "faq-section",
+    "name": "FAQ Section",
+    "settings": [
+        {
+            "type": "blog",
+            "id": "blog",
+            "label": "FAQ Category"
+        }, {
+            "type": "text",
+            "id": "heading",
+            "label": "FAQ section heading"
+        }
+    ]
+    }],
+    "presets": [
+    {
+        "name": "OY Mega menu"
+    }
+    ]
+}
+{% endschema %}
