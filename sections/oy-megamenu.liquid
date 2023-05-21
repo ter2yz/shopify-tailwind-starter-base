@@ -13,33 +13,34 @@
 {%- endstyle -%}
 <div class="twcss-w-full">
     <div class="twcss-container section-{{ section.id }}-padding">
-        <nav class="twcss-bg-white twcss-border-gray-200 dark:twcss-bg-gray-900">
-            <ul class="twcss-flex twcss-justify-center twcss-items-center twcss-gap-6">
-                <li class="twcss-relative twcss-flex twcss-items-center">Home</li>
-                <li class="twcss-relative twcss-flex twcss-items-center twcss-group">
-                    Categories
-                    <svg aria-hidden="true" class="twcss-w-5 twcss-h-5 twcss-ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <div class="twcss-absolute twcss-top-full twcss-left-1/2 -twcss-translate-x-1/2 twcss-grid twcss-grid-rows-[0fr] twcss-transition-[grid-template-rows] group-hover:twcss-grid-rows-[1fr] twcss-p-3">
-                        <div class="twcss-min-w-min twcss-overflow-hidden twcss-shadow-lg twcss-bg-transparent twcss-rounded-xl">
-                            <div class="twcss-flex twcss-flex-wrap twcss-min-w-max twcss-bg-white twcss-border twcss-border-gray-100 twcss-rounded-xl twcss-p-6">
-                                <a class="twcss-w-1/2 twcss-px-1 twcss-py-3" href="">
-                                    <p class="twcss-text-2xl twcss-max-w-sm">Category One</p>
-                                </a>
-                                <a class="twcss-w-1/2 twcss-px-1 twcss-py-3" href="">
-                                    <p class="twcss-text-2xl twcss-max-w-sm">Category Two</p>
-                                </a>
-                                <a class="twcss-w-1/2 twcss-px-1 twcss-py-3" href="">
-                                    <p class="twcss-text-2xl twcss-max-w-sm">Category Three</p>
-                                </a>
-                                <a class="twcss-w-1/2 twcss-px-1 twcss-py-3" href="">
-                                    <p class="twcss-text-2xl twcss-max-w-sm">Category Four</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="twcss-relative twcss-flex twcss-items-center">Brands</li>
-                <li class="twcss-relative twcss-flex twcss-items-center">Onsale</li>
+        <nav class="twcss-bg-white twcss-border-gray-200 twcss-flex twcss-justify-center">
+            <ul class="twcss-flex twcss-justify-start twcss-items-center twcss-gap-6 twcss-flex-wrap">
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {%- when 'menu-item' -%}
+                            {% if block.settings.first-lv-url %}
+                            <a class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-font-normal twcss-text-sky-primary twcss-whitespace-nowrap" href="{{ block.settings.first-lv-url | url_escape }}">{{ block.settings.first-lv-label }}</a>
+                            {%  else %}
+                            <li class="twcss-relative twcss-flex twcss-items-center twcss-group twcss-cursor-default twcss-text-sky-primary twcss-whitespace-nowrap">
+                                {{ block.settings.first-lv-label }}
+                                {% if block.settings.collection-list.count > 0 %}
+                                <svg aria-hidden="true" class="twcss-w-5 twcss-h-5 twcss-ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <div class="twcss-absolute twcss-top-full twcss-left-1/2 -twcss-translate-x-1/2 twcss-grid twcss-grid-rows-[0fr] twcss-transition-[grid-template-rows] group-hover:twcss-grid-rows-[1fr] twcss-p-3 twcss-z-30">
+                                    <div class="twcss-min-w-min twcss-overflow-hidden twcss-shadow-lg twcss-bg-transparent twcss-rounded-xl">
+                                        <div class="twcss-flex twcss-flex-wrap twcss-bg-white twcss-border twcss-border-gray-100 twcss-rounded-xl twcss-p-6">
+                                            {% for singleCollection in block.settings.collection-list %}
+                                            <a class="twcss-w-full twcss-px-6 twcss-py-3" href="{{ singleCollection.url | url_escape }}">
+                                                <p class="twcss-text-2xl twcss-whitespace-nowrap">{{ singleCollection.title }}</p>
+                                            </a>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            </li>
+                            {% endif %}
+                    {%- endcase -%}
+                {%- endfor -%}
             </ul>
         </nav>
     </div>
@@ -50,9 +51,6 @@
     "name": "OY Mega menu",
     "tag": "section",
     "class": "section",
-    "disabled_on": {
-    "groups": ["header", "footer"]
-    },
     "settings": [{
         "type": "text",
         "id": "heading",
