@@ -22,7 +22,7 @@
                     {% case block.type %}
                         {%- when 'menu-item' -%}
                             {% if block.settings.first-lv-url %}
-                            <a class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-font-normal twcss-text-amber-dark twcss-whitespace-nowrap twcss-transition hover:twcss-text-amber-secondary" href="{{ block.settings.first-lv-url | url_escape }}">{{ block.settings.first-lv-label }}</a>
+                            <a class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-text-amber-dark twcss-whitespace-nowrap twcss-transition hover:twcss-text-amber-secondary" href="{{ block.settings.first-lv-url | url_escape }}">{{ block.settings.first-lv-label }}</a>
                             {%  else %}
                             <li class="twcss-text-2xl twcss-relative twcss-flex twcss-items-center twcss-group twcss-cursor-default twcss-text-amber-dark twcss-whitespace-nowrap twcss-transition hover:twcss-text-amber-secondary">
                                 {{ block.settings.first-lv-label }}
