@@ -1,63 +1,5 @@
 {
   "sections": {
-    "e0aa5483-da9a-47b1-b559-36d5db692691": {
-      "type": "oy-megamenu",
-      "blocks": {
-        "b80198b8-9ed9-49bc-af72-17a0a9e6303a": {
-          "type": "menu-item",
-          "settings": {
-            "first-lv-label": "Home",
-            "first-lv-url": "\/",
-            "collection-list": [
-
-            ]
-          }
-        },
-        "859c04c6-5656-4db9-9a87-451c52d7f522": {
-          "type": "menu-item",
-          "settings": {
-            "first-lv-label": "Categories",
-            "first-lv-url": "",
-            "collection-list": [
-              "educational-toys",
-              "scooter",
-              "teether"
-            ]
-          }
-        },
-        "73105823-7912-4247-850c-7b676100e23b": {
-          "type": "menu-item",
-          "settings": {
-            "first-lv-label": "Brands",
-            "first-lv-url": "",
-            "collection-list": [
-              "ambi-toys"
-            ]
-          }
-        },
-        "e4d9381e-26c5-4217-8698-485058cfd3e5": {
-          "type": "menu-item",
-          "settings": {
-            "first-lv-label": "Best Sellers",
-            "first-lv-url": "shopify:\/\/collections\/best-selling-collection",
-            "collection-list": [
-
-            ]
-          }
-        }
-      },
-      "block_order": [
-        "b80198b8-9ed9-49bc-af72-17a0a9e6303a",
-        "859c04c6-5656-4db9-9a87-451c52d7f522",
-        "73105823-7912-4247-850c-7b676100e23b",
-        "e4d9381e-26c5-4217-8698-485058cfd3e5"
-      ],
-      "settings": {
-        "heading": "FAQs",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19": {
       "type": "oy-image-with-text",
       "blocks": {
@@ -317,7 +259,6 @@
     }
   },
   "order": [
-    "e0aa5483-da9a-47b1-b559-36d5db692691",
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
     "57a133a8-ef64-4af4-ae3d-2661aa21438a",
