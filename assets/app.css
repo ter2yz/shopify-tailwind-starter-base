@@ -442,7 +442,7 @@ html h1,
 
 html p,
   html span,
-  html a {
+  html a, html li {
   font-family: 'Plus JakartaSans', system-ui, sans-serif;
   font-size: 20px;
   font-weight: 300;
