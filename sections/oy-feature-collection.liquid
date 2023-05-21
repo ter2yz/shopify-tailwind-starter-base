@@ -18,22 +18,30 @@
     href="{{ 'quick-add.css' | asset_url }}"
     media="print"
     onload="this.media='all'">
-  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script
+    src="{{ 'quick-add.js' | asset_url }}"
+    defer="defer"></script>
+  <script
+    src="{{ 'product-form.js' | asset_url }}"
+    defer="defer"></script>
 {%- endif -%}
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
 {%- endstyle -%}
@@ -60,11 +68,14 @@
 
 <div
   class="twcss-relative twcss-w-full isolate gradient">
-  <div class="twcss-container twcss-py-40">
+  <div
+    class="twcss-container twcss-py-40">
 
-    <div class="twcss-w-full twcss-flex twcss-justify-between twcss-items-center twcss-mb-6">
+    <div
+      class="twcss-w-full twcss-flex twcss-justify-between twcss-items-center twcss-mb-6">
       {%- if section.settings.title != blank -%}
-        <h2 class="twcss-text-5xl sm:twcss-text-6xl twcss-font-young-serif">{{ section.settings.title }}</h2>
+        <h2
+          class="twcss-text-5xl sm:twcss-text-6xl twcss-font-young-serif">{{ section.settings.title }}</h2>
       {%- endif -%}
       {%- if section.settings.show_view_all and more_in_collection -%}
         <a
@@ -76,16 +87,19 @@
       {%- endif -%}
     </div>
 
-    <slider-component class="twcss-w-full">
+    <slider-component
+      class="twcss-w-full">
       <ul
         id="Slider-{{ section.id }}"
         class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
         role="list"
         aria-label="{{ 'general.slider.name' | t }}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
-            {% render 'oy-card-product'
-             , card_product: product,
+          <li
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
+            {% render 'oy-card-product',
+             card_product: product,
              media_aspect_ratio: section.settings.image_ratio,
              show_secondary_image: section.settings.show_secondary_image,
              show_vendor: section.settings.show_vendor,
@@ -95,14 +109,16 @@
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
-            <li class="grid__item">
-              {% render 'card-product', show_vendor: section.settings.show_vendor %}
+            <li
+              class="grid__item">
+              {% render 'oy-card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
         {%- endfor -%}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
-        <div class="slider-buttons no-js-hidden">
+        <div
+          class="slider-buttons no-js-hidden">
           <button
             type="button"
             class="slider-button slider-button--prev"
@@ -111,13 +127,18 @@
             aria-controls="Slider-{{ section.id }}">
             {% render 'icon-caret' %}
           </button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true">
+          <div
+            class="slider-counter caption">
+            <span
+              class="slider-counter--current">1</span>
+            <span
+              aria-hidden="true">
               /
             </span>
-            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ products_to_display }}</span>
+            <span
+              class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span
+              class="slider-counter--total">{{ products_to_display }}</span>
           </div>
           <button
             type="button"
