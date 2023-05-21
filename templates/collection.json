@@ -11,6 +11,23 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "570d9701-f1de-4d64-8870-4729d7c6bb74": {
+          "type": "custom-filters",
+          "settings": {
+            "first-lv-label": "Categories",
+            "first-lv-url": "",
+            "collection-list": [
+              "educational-toys",
+              "scooter",
+              "teether"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "570d9701-f1de-4d64-8870-4729d7c6bb74"
+      ],
       "settings": {
         "products_per_page": 12,
         "columns_desktop": 3,
