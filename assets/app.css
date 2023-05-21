@@ -1098,6 +1098,14 @@ html p,
   margin-bottom: 0;
 }
 
+.twcss-pointer-events-none {
+  pointer-events: none;
+}
+
+.twcss-visible {
+  visibility: visible;
+}
+
 .twcss-fixed {
   position: fixed;
 }
@@ -1757,6 +1765,11 @@ html p,
   line-height: 1.375;
 }
 
+.twcss-text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .twcss-text-sky-primary {
   --tw-text-opacity: 1;
   color: rgb(8 75 109 / var(--tw-text-opacity));
@@ -1773,11 +1786,6 @@ html p,
 .twcss-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.twcss-text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .twcss-underline {

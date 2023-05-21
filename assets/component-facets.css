@@ -328,6 +328,10 @@
   top: 1.4rem;
 }
 
+.facet-checkbox .icon-checkmark.twcss-visibility {
+  visibility: visible;
+}
+
 .facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
   visibility: visible;
 }
