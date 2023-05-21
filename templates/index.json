@@ -1,5 +1,13 @@
 {
   "sections": {
+    "e0aa5483-da9a-47b1-b559-36d5db692691": {
+      "type": "oy-megamenu",
+      "settings": {
+        "heading": "FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19": {
       "type": "oy-image-with-text",
       "blocks": {
@@ -256,24 +264,16 @@
         "padding_top": 76,
         "padding_bottom": 76
       }
-    },
-    "e0aa5483-da9a-47b1-b559-36d5db692691": {
-      "type": "oy-megamenu",
-      "settings": {
-        "heading": "FAQs",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
+    "e0aa5483-da9a-47b1-b559-36d5db692691",
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
     "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
     "e30789c7-a70d-47bf-a118-6fea3f9a2347",
     "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
-    "d98ed3ac-81a2-47e5-b7b2-b07c630976dd",
-    "e0aa5483-da9a-47b1-b559-36d5db692691"
+    "d98ed3ac-81a2-47e5-b7b2-b07c630976dd"
   ]
 }
