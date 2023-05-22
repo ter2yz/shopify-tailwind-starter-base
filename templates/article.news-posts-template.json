@@ -6,7 +6,7 @@
         "featured_image": {
           "type": "featured_image",
           "settings": {
-            "bg_color": "#fff5f5",
+            "bg_color": "#fff3e1",
             "image_height": "adapt"
           }
         },
