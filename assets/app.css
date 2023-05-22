@@ -1196,6 +1196,11 @@ html p,
   margin-bottom: 2.25rem;
 }
 
+.twcss-mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .-twcss-mt-3 {
   margin-top: -0.75rem;
 }
@@ -1544,6 +1549,10 @@ html p,
   border-color: rgb(8 75 109 / 0.2);
 }
 
+.twcss-border-amber-secondary\/20 {
+  border-color: rgb(181 136 93 / 0.2);
+}
+
 .twcss-bg-\[\#f4fcff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 252 255 / var(--tw-bg-opacity));
@@ -1667,6 +1676,11 @@ html p,
 .twcss-py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.twcss-px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .twcss-pl-3 {
@@ -1802,6 +1816,14 @@ html p,
 .twcss-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.twcss-text-amber-secondary\/60 {
+  color: rgb(181 136 93 / 0.6);
+}
+
+.twcss-text-amber-secondary\/40 {
+  color: rgb(181 136 93 / 0.4);
 }
 
 .twcss-underline {

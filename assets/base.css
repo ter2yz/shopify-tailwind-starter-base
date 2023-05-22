@@ -2450,6 +2450,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   color: rgb(var(--color-foreground));
 }
 
+.header__icon.twcss-text-amber-secondary {
+  color: #b5885d;
+}
+
 .header__icon span {
   height: 100%;
 }

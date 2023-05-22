@@ -22,11 +22,11 @@
         {% if extend_height %} card--extend-height{% endif %}
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
-        twcss-relative twcss-rounded-3xl twcss-border twcss-border-sky-primary/20 twcss-p-9 twcss-transition group-hover:twcss-border-sky-primary/0
+        twcss-relative twcss-rounded-3xl twcss-border twcss-border-amber-secondary/20 twcss-p-9 twcss-transition group-hover:twcss-border-sky-primary/0
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <svg class="twcss-absolute twcss-rounded-3xl twcss-left-0 twcss-top-0 twcss-opacity-0 group-hover:twcss-opacity-100 twcss-transition -twcss-z-10" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect class="group-hover:twcss-animate-svg-running twcss-opacity-20" width="100%" height="100%" fill="none" rx="15" ry="15" stroke="#084b6d" stroke-width="4" stroke-dasharray="10" stroke-linecap="square"></rect></svg>
+      <svg class="twcss-absolute twcss-rounded-3xl twcss-left-0 twcss-top-0 twcss-opacity-0 group-hover:twcss-opacity-100 twcss-transition -twcss-z-10" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><rect class="group-hover:twcss-animate-svg-running twcss-opacity-20" width="100%" height="100%" fill="none" rx="15" ry="15" stroke="#b5885d" stroke-width="4" stroke-dasharray="10" stroke-linecap="square"></rect></svg>
       <div
     class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
     style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -124,7 +124,7 @@
           <div>
             {%- if show_vendor -%}
             <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-            <div class="caption-with-letter-spacing light twcss-text-center twcss-text-sky-primary/60 twcss-mb-3">{{ card_product.vendor }}</div>
+            <div class="caption-with-letter-spacing light twcss-text-center twcss-text-amber-secondary/60 twcss-mb-3">{{ card_product.vendor }}</div>
             {%- endif -%}
             <h3
             class="twcss-text-center "
