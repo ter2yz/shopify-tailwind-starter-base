@@ -87,21 +87,21 @@
         "dfcfd393-00a9-4459-8294-1b3ba70b7726": {
           "type": "brand",
           "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich.png",
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-schleich_amber-sec.png",
             "image_link": "https:\/\/www.scootandride.at\/"
           }
         },
         "cda1b07f-59a9-4d46-829b-8c1148edb622": {
           "type": "brand",
           "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-ambi_toys.png",
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-ambitoys_amber-sec.png",
             "image_link": ""
           }
         },
         "dc28e2fb-cc2f-43a7-a8f4-2b719316b865": {
           "type": "brand",
           "settings": {
-            "image_with_text_image": "shopify:\/\/shop_images\/logo-mideer.png",
+            "image_with_text_image": "shopify:\/\/shop_images\/logo-mideer_amber-sec.png",
             "image_link": ""
           }
         }
@@ -192,14 +192,14 @@
         "cd0a9f99-6d15-4d63-bac9-9595608d3c39": {
           "type": "service",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-headset.svg",
+            "icon": "shopify:\/\/shop_images\/icon-headset_amber-secondary.svg",
             "description": "Excellent customer support."
           }
         },
         "ba485657-21bd-47be-bdc9-ad77e5cffb10": {
           "type": "service",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-trolley.svg",
+            "icon": "shopify:\/\/shop_images\/icon-trolley_amber-secondary_af7f5856-42ed-44cd-b4ac-f82badb8a2fe.svg",
             "description": "Fast shipping with package tracking."
           }
         }
@@ -223,7 +223,7 @@
         "2e5d71fc-143d-46c3-bc8c-9f1888743e0f": {
           "type": "icon",
           "settings": {
-            "image_icon": "shopify:\/\/shop_images\/5ea62068808bdf13199607ba_icon-send-package.svg"
+            "image_icon": "shopify:\/\/shop_images\/icon-shopping-box_amber-secondary.svg"
           }
         },
         "6c085261-664e-4ea5-ab7f-fc2e1c1c2cb5": {
