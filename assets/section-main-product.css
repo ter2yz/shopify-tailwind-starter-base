@@ -214,6 +214,12 @@ fieldset.product-form__input .form__label {
   position: relative;
 }
 
+.product-form__input.theme-amber input[type='radio'] + label {
+  border: var(--variant-pills-border-width) solid
+    rgba(181, 136, 93, var(--variant-pills-border-opacity));
+  color: rgb(181, 136, 93);
+}
+
 .product-form__input input[type='radio'] + label:before {
   content: '';
   position: absolute;
@@ -230,11 +236,11 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio'] + label:hover {
-  border-color: rgb(8, 75, 109);
+  border-color: rgb(181 136 93);
 }
 
 .product-form__input input[type='radio']:checked + label {
-  background-color: rgb(8, 75, 109);
+  background-color: rgb(181 136 93);
   color: rgb(var(--color-background));
 }
 
