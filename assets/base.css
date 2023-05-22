@@ -1749,6 +1749,15 @@ details[open] > .share-button__fallback {
   z-index: 1;
 }
 
+.field.shadow-none:before,
+.field.shadow-none:after {
+  display: none;
+}
+
+.field.shadow-none .field__input:focus {
+  box-shadow: none;
+}
+
 .select__select {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -2056,6 +2065,10 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.quantity__input.twcss-text-amber-dark {
+  color: #3D342A;
 }
 
 .quantity__button {
@@ -2843,7 +2856,7 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   text-align: center;
-  background-color: rgb(8 75 109);
+  background-color: rgb(181 136 93);
   color: rgb(var(--color-foreground));
   word-break: break-word;
 }

@@ -36,8 +36,8 @@
   }
 {%- endstyle -%}
 
-<footer class="footer twcss-w-full section-{{ section.id }}-padding twcss-bg-sky-primary">
-  <div class="twcss-container twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-center lg:twcss-items-start twcss-justify-around">
+<footer class="footer twcss-w-full section-{{ section.id }}-padding twcss-bg-amber-secondary">
+  <div class="twcss-container twcss-flex twcss-flex-col lg:twcss-flex-row twcss-items-center lg:twcss-items-start twcss-justify-around twcss-py-20">
     <div class="twcss-mr-0 lg:twcss-mr-20 -twcss-mt-3 twcss-mb-12 lg:twcss-mb-0">
       <a href="/" class=""><span class="twcss-font-young-serif twcss-text-6xl twcss-leading-snug twcss-text-white">Oyaykids</span></a>
     </div>
@@ -50,7 +50,7 @@
           {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form oy-form', style: 'margin: 0;' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
-              <div class="field">
+              <div class="field shadow-none">
                 <input
                   id="NewsletterForm--{{ section.id }}"
                   type="email"
@@ -119,7 +119,7 @@
     </div>
   </div>
 
-  <div class="footer__content-bottom">
+  <div class="footer__content-bottom twcss-border-amber-primary">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
