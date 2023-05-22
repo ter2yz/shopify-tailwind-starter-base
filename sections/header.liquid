@@ -342,8 +342,7 @@
     <div id="menu-toggle" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
       <span>
         {% comment %} {% render 'icon-hamburger' %} {% endcomment %}
-        {% comment %} <img src="{{ 'icon-menu.svg' | asset_url }}" width="24" height="24" alt="menu button" loading="lazy"> {% endcomment %}
-        <img src="{{ 'hh-kids-logo.png' | asset_url }}" width="59" height="59" alt="menu button" loading="lazy">
+        <img src="{{ 'icon-menu.svg' | asset_url }}" width="24" height="24" alt="menu button" loading="lazy">
       </span>
     </div>
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}

@@ -1518,7 +1518,7 @@ html p,
 
 .twcss-border-amber-secondary {
   --tw-border-opacity: 1;
-  border-color: rgb(164 108 89 / var(--tw-border-opacity));
+  border-color: rgb(181 136 93 / var(--tw-border-opacity));
 }
 
 .twcss-border-gray-100 {
@@ -1560,7 +1560,7 @@ html p,
 }
 
 .twcss-bg-amber-secondary\/80 {
-  background-color: rgb(164 108 89 / 0.8);
+  background-color: rgb(181 136 93 / 0.8);
 }
 
 .twcss-bg-sky-primary {
@@ -1755,10 +1755,6 @@ html p,
   font-weight: 500;
 }
 
-.twcss-font-normal {
-  font-weight: 400;
-}
-
 .twcss-font-semibold {
   font-weight: 600;
 }
@@ -1782,7 +1778,7 @@ html p,
 
 .twcss-text-amber-secondary {
   --tw-text-opacity: 1;
-  color: rgb(164 108 89 / var(--tw-text-opacity));
+  color: rgb(181 136 93 / var(--tw-text-opacity));
 }
 
 .twcss-text-orange-600 {
@@ -2195,11 +2191,11 @@ html p,
 
 .hover\:twcss-bg-amber-secondary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(164 108 89 / var(--tw-bg-opacity));
+  background-color: rgb(181 136 93 / var(--tw-bg-opacity));
 }
 
 .hover\:twcss-bg-amber-secondary\/100:hover {
-  background-color: rgb(164 108 89 / 1);
+  background-color: rgb(181 136 93 / 1);
 }
 
 .hover\:twcss-bg-sky-primary:hover {
@@ -2209,7 +2205,7 @@ html p,
 
 .hover\:twcss-text-amber-secondary:hover {
   --tw-text-opacity: 1;
-  color: rgb(164 108 89 / var(--tw-text-opacity));
+  color: rgb(181 136 93 / var(--tw-text-opacity));
 }
 
 .hover\:twcss-text-white:hover {
