@@ -263,26 +263,33 @@
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "ambi-toys"
           }
         },
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "brand-mideer"
           }
         },
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "brand-schleich"
+          }
+        },
+        "4e038705-b1f6-4a4b-a4e8-005baf2af05b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-scooter"
           }
         }
       },
       "block_order": [
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0",
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1",
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2"
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2",
+        "4e038705-b1f6-4a4b-a4e8-005baf2af05b"
       ],
       "settings": {
         "title": "Collections",
