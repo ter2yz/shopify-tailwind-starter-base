@@ -1345,6 +1345,10 @@ html p,
   width: 100vw;
 }
 
+.twcss-w-12 {
+  width: 3rem;
+}
+
 .twcss-min-w-min {
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
@@ -1460,6 +1464,14 @@ html p,
 
 .twcss-gap-6 {
   gap: 1.5rem;
+}
+
+.twcss-gap-3 {
+  gap: 0.75rem;
+}
+
+.twcss-gap-1 {
+  gap: 0.25rem;
 }
 
 .twcss-gap-x-16 {
@@ -2281,6 +2293,22 @@ html p,
 .focus-visible\:twcss-outline-none:focus-visible {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.twcss-group:hover .group-hover\:twcss-rotate-12 {
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-group:hover .group-hover\:-twcss-rotate-45 {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-group:hover .group-hover\:twcss-scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @-webkit-keyframes twcss-svg-running {
