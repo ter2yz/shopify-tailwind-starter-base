@@ -30,7 +30,10 @@
             "first-lv-label": "Brands",
             "first-lv-url": "",
             "collection-list": [
-              "ambi-toys"
+              "ambi-toys",
+              "brand-mideer",
+              "brand-schleich",
+              "brand-scooter"
             ]
           }
         }
