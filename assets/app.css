@@ -1868,6 +1868,14 @@ html p,
           text-decoration-line: underline;
 }
 
+.twcss-underline-offset-1 {
+  text-underline-offset: 1px;
+}
+
+.twcss-underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .twcss-opacity-0 {
   opacity: 0;
 }
@@ -2357,6 +2365,11 @@ html p,
 .twcss-group:hover .group-hover\:twcss-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.twcss-group:hover .group-hover\:twcss-underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .twcss-group:hover .group-hover\:twcss-opacity-100 {

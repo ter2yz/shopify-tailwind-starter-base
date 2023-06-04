@@ -25,7 +25,7 @@
   endif
 -%}
 
-<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %} twcss-sticky twcss-top-48 twcss-z-50">
+<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %} twcss-sticky twcss-top-52 twcss-z-50">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
@@ -164,7 +164,7 @@
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %} twcss-items-center"
                               >
                                 <input
                                   type="checkbox"
@@ -228,7 +228,7 @@
                             <li class="list-menu__item facets__item">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
-                                class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %} twcss-items-center"
                               >
                                 <input
                                   type="checkbox"
@@ -441,25 +441,13 @@
                             class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden"
                             role="list"
                         >
-                            {%- for singleCollection in filter.settings.collection-list -%}
-                            <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                            {%- assign collections = filter.settings.collection-list | sort: 'title' -%}
+                            {%- for singleCollection in collections -%}
+                            <li class="list-menu__item twcss-group facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                                 <label
                                 for="Filter-{{ singleCollection.handle | escape }}-{{ forloop.index }}"
-                                class="facet-checkbox{% if singleCollection.all_products_count == 0 %} twcss-opacity-50 facet-checkbox--disabled{% endif %}"
+                                class="facet-checkbox{% if singleCollection.all_products_count == 0 %} twcss-opacity-50 facet-checkbox--disabled{% endif %} twcss-items-center"
                                 >
-                                {% comment %} <input
-                                    type="radio"
-                                    name="{{ singleCollection.handle }}"
-                                    value="{{ singleCollection.handle }}"
-                                    id="Filter-{{ singleCollection.handle | escape }}-{{ forloop.index }}"
-                                    {% if collection.handle == singleCollection.handle %}
-                                    checked
-                                    {% endif %}
-                                    {% if singleCollection.all_products_count == 0 %}
-                                    disabled
-                                    {% endif %}
-                                > {% endcomment %}
-    
                                 <svg
                                     width="1.6rem"
                                     height="1.6rem"
@@ -471,7 +459,7 @@
                                     <circle cx="8" cy="8" r="5" stroke="none" fill="{% if collection.handle == singleCollection.handle %}currentColor{% else %}none{% endif %}" stroke-width="1"></circle>
                                 </svg>
     
-                                <a href="{{ singleCollection.url | url_escape }}" class="twcss-text-2xl {% if singleCollection.all_products_count == 0 %}twcss-pointer-events-none twcss-cursor-default{% endif %}" aria-hidden="true" disabled>{{ singleCollection.title | escape }} ({{ singleCollection.all_products_count }})</a>
+                                <a href="{{ singleCollection.url | url_escape }}" class="twcss-text-2xl twcss-opacity-80 twcss-transition group-hover:twcss-opacity-100 group-hover:twcss-underline twcss-underline-offset-2 {% if singleCollection.all_products_count == 0 %}twcss-pointer-events-none twcss-cursor-default{% endif %}" aria-hidden="true" disabled>{{ singleCollection.title | escape }} ({{ singleCollection.all_products_count }})</a>
                                 <span class="visually-hidden">
                                     {{- singleCollection.title | escape }} (
                                     {%- if singleCollection.all_products_count == 1 -%}
@@ -491,10 +479,10 @@
                             role="list"
                         >
                             {%- for singleCollection in filter.settings.collection_list -%}
-                            <li class="list-menu__item facets__item">
+                            <li class="list-menu__item facets__item twcss-group">
                                 <label
                                 for="Filter-{{ singleCollection.handle | escape }}-{{ forloop.index }}-no-js"
-                                class="facet-checkbox{% if singleCollection.all_products_count %} facet-checkbox--disabled{% endif %}"
+                                class="facet-checkbox{% if singleCollection.all_products_count %} facet-checkbox--disabled{% endif %} twcss-items-center"
                                 >
                                 <input
                                     type="checkbox"
