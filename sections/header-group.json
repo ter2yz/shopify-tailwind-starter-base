@@ -41,9 +41,10 @@
             "first-lv-label": "CATEGORIES",
             "first-lv-url": "",
             "collection-list": [
-              "educational-toys",
+              "teether",
+              "category-safety",
               "scooter",
-              "teether"
+              "educational-toys"
             ]
           }
         },
@@ -53,11 +54,11 @@
             "first-lv-label": "BRANDS",
             "first-lv-url": "",
             "collection-list": [
-              "brand-scooter",
-              "brand-schleich",
-              "brand-mombella",
+              "ambi-toys",
               "brand-mideer",
-              "ambi-toys"
+              "brand-mombella",
+              "brand-scooter",
+              "brand-schleich"
             ]
           }
         },
