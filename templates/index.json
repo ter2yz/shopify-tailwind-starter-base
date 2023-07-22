@@ -277,6 +277,7 @@
     },
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {
       "type": "oy-image-icon-text-cta",
+      "disabled": true,
       "blocks": {
         "2e5d71fc-143d-46c3-bc8c-9f1888743e0f": {
           "type": "icon",
@@ -287,7 +288,7 @@
         "6c085261-664e-4ea5-ab7f-fc2e1c1c2cb5": {
           "type": "heading",
           "settings": {
-            "heading": "Stress-free shopping, guaranteed."
+            "heading": "Free shipping on orders over $99"
           }
         },
         "a918b7f4-23fa-461c-9011-d6707016fd51": {
