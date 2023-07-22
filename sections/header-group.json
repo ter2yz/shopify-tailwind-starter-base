@@ -4,21 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ],
       "settings": {
       }
     },
@@ -66,8 +51,12 @@
           "type": "menu-item",
           "settings": {
             "first-lv-label": "BRANDS",
-            "first-lv-url": "",
+            "first-lv-url": "shopify:\/\/collections\/brands",
             "collection-list": [
+              "brand-scooter",
+              "brand-schleich",
+              "brand-mombella",
+              "brand-mideer",
               "ambi-toys"
             ]
           }
