@@ -41,11 +41,12 @@
             "first-lv-label": "CATEGORIES",
             "first-lv-url": "",
             "collection-list": [
-              "educational-toys",
-              "scooter",
               "teether",
               "grip-socks",
-              "category-safety"
+              "category-safety",
+              "dramatic-play",
+              "educational-toys",
+              "scooter"
             ]
           }
         },
