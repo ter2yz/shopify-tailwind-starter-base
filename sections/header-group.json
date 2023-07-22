@@ -51,7 +51,7 @@
           "type": "menu-item",
           "settings": {
             "first-lv-label": "BRANDS",
-            "first-lv-url": "shopify:\/\/collections\/brands",
+            "first-lv-url": "shopify:\/\/collections\/ambi-toys",
             "collection-list": [
               "brand-scooter",
               "brand-schleich",
