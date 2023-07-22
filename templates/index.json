@@ -224,6 +224,12 @@
     "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a": {
       "type": "oy-collection-list",
       "blocks": {
+        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-mombella"
+          }
+        },
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0": {
           "type": "featured_collection",
           "settings": {
@@ -247,20 +253,14 @@
           "settings": {
             "collection": "brand-scooter"
           }
-        },
-        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brand-mombella"
-          }
         }
       },
       "block_order": [
+        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e",
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0",
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1",
         "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2",
-        "4e038705-b1f6-4a4b-a4e8-005baf2af05b",
-        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e"
+        "4e038705-b1f6-4a4b-a4e8-005baf2af05b"
       ],
       "settings": {
         "title": "Brands",
