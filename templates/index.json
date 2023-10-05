@@ -1,5 +1,59 @@
 {
   "sections": {
+    "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a": {
+      "type": "oy-collection-list",
+      "blocks": {
+        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-mombella"
+          }
+        },
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ambi-toys"
+          }
+        },
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-mideer"
+          }
+        },
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-schleich"
+          }
+        },
+        "4e038705-b1f6-4a4b-a4e8-005baf2af05b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brand-scooter"
+          }
+        }
+      },
+      "block_order": [
+        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e",
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0",
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1",
+        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2",
+        "4e038705-b1f6-4a4b-a4e8-005baf2af05b"
+      ],
+      "settings": {
+        "title": "Brands",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19": {
       "type": "oy-image-with-text",
       "blocks": {
@@ -73,7 +127,6 @@
     },
     "57a133a8-ef64-4af4-ae3d-2661aa21438a": {
       "type": "oy-image-icon-text-cta",
-      "disabled": true,
       "blocks": {
         "d6843546-0640-4bff-bff6-42e657e0affe": {
           "type": "caption",
@@ -116,6 +169,7 @@
         "cda1b07f-59a9-4d46-829b-8c1148edb622",
         "dc28e2fb-cc2f-43a7-a8f4-2b719316b865"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 60
@@ -123,7 +177,6 @@
     },
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4": {
       "type": "oy-image-banner",
-      "disabled": true,
       "blocks": {
         "b422b20a-851c-49b7-aa6f-80ced31b5a6c": {
           "type": "button",
@@ -136,6 +189,7 @@
       "block_order": [
         "b422b20a-851c-49b7-aa6f-80ced31b5a6c"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/baby-toys-bottles-products.jpg",
         "heading": "Let them play.",
@@ -221,63 +275,8 @@
         "layout": "text_first"
       }
     },
-    "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a": {
-      "type": "oy-collection-list",
-      "blocks": {
-        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brand-mombella"
-          }
-        },
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ambi-toys"
-          }
-        },
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brand-mideer"
-          }
-        },
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brand-schleich"
-          }
-        },
-        "4e038705-b1f6-4a4b-a4e8-005baf2af05b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "brand-scooter"
-          }
-        }
-      },
-      "block_order": [
-        "b9ef1fa8-17a5-445d-9ae5-ecb1f30c6c7e",
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-0",
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-1",
-        "template--18242976317724__2f62a44e-79d8-4d03-a32f-ab10b9df5b5a-16857266669e56660a-2",
-        "4e038705-b1f6-4a4b-a4e8-005baf2af05b"
-      ],
-      "settings": {
-        "title": "Brands",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 5,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 40
-      }
-    },
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {
       "type": "oy-image-icon-text-cta",
-      "disabled": true,
       "blocks": {
         "2e5d71fc-143d-46c3-bc8c-9f1888743e0f": {
           "type": "icon",
@@ -311,6 +310,7 @@
         "a918b7f4-23fa-461c-9011-d6707016fd51",
         "309914cb-ba1b-41b9-91e4-cb8f7b7afbea"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 76,
         "padding_bottom": 76
@@ -318,13 +318,13 @@
     }
   },
   "order": [
+    "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a",
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
     "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
     "e30789c7-a70d-47bf-a118-6fea3f9a2347",
     "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
-    "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a",
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd"
   ]
 }
