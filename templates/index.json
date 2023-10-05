@@ -54,6 +54,51 @@
         "padding_bottom": 52
       }
     },
+    "40ba320b-cdd0-4772-bc1a-531bd6a1630e": {
+      "type": "oy-custom-self",
+      "blocks": {
+        "e5824aad-66da-45d9-a531-119fae224127": {
+          "type": "caption",
+          "settings": {
+            "caption": "BUY WITH CONFIDENCE",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "We’re a top-tier retailer you know."
+          }
+        },
+        "cd0a9f99-6d15-4d63-bac9-9595608d3c39": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-headset_amber-secondary.svg",
+            "description": "Excellent customer support."
+          }
+        },
+        "ba485657-21bd-47be-bdc9-ad77e5cffb10": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-trolley_amber-secondary_af7f5856-42ed-44cd-b4ac-f82badb8a2fe.svg",
+            "description": "Free shipping on orders over $99 for melbourne and over $150 for all other areas in Australia"
+          }
+        }
+      },
+      "block_order": [
+        "e5824aad-66da-45d9-a531-119fae224127",
+        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0",
+        "cd0a9f99-6d15-4d63-bac9-9595608d3c39",
+        "ba485657-21bd-47be-bdc9-ad77e5cffb10"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/little-boy-in-playground-looking-to-the-right.jpg",
+        "bg_color": "#fff8f0",
+        "layout": "text_first"
+      }
+    },
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19": {
       "type": "oy-image-with-text",
       "blocks": {
@@ -225,58 +270,6 @@
         "padding_bottom": 20
       }
     },
-    "40ba320b-cdd0-4772-bc1a-531bd6a1630e": {
-      "type": "oy-custom-self",
-      "blocks": {
-        "e5824aad-66da-45d9-a531-119fae224127": {
-          "type": "caption",
-          "settings": {
-            "caption": "BUY WITH CONFIDENCE",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "We’re a top-tier retailer you know."
-          }
-        },
-        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1": {
-          "type": "text",
-          "settings": {
-            "text": "Ut urna scelerisque pellentesque id condimentum vitae nibh. Bibendum convallis odio blandit sem a, dictum sit."
-          }
-        },
-        "cd0a9f99-6d15-4d63-bac9-9595608d3c39": {
-          "type": "service",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-headset_amber-secondary.svg",
-            "description": "Excellent customer support."
-          }
-        },
-        "ba485657-21bd-47be-bdc9-ad77e5cffb10": {
-          "type": "service",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-trolley_amber-secondary_af7f5856-42ed-44cd-b4ac-f82badb8a2fe.svg",
-            "description": "Free shipping on orders over $99 for melbourne and over $150 for all other areas in Australia"
-          }
-        }
-      },
-      "block_order": [
-        "e5824aad-66da-45d9-a531-119fae224127",
-        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0",
-        "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-1",
-        "cd0a9f99-6d15-4d63-bac9-9595608d3c39",
-        "ba485657-21bd-47be-bdc9-ad77e5cffb10"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/little-boy-in-playground-looking-to-the-right.jpg",
-        "bg_color": "#fff8f0",
-        "layout": "text_first"
-      }
-    },
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd": {
       "type": "oy-image-icon-text-cta",
       "blocks": {
@@ -312,7 +305,6 @@
         "a918b7f4-23fa-461c-9011-d6707016fd51",
         "309914cb-ba1b-41b9-91e4-cb8f7b7afbea"
       ],
-      "disabled": true,
       "settings": {
         "padding_top": 76,
         "padding_bottom": 76
@@ -321,12 +313,12 @@
   },
   "order": [
     "2f62a44e-79d8-4d03-a32f-ab10b9df5b5a",
+    "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
     "9da399a2-782d-4e0e-8bcc-2f9e9bde9e19",
     "fb9c57f9-1bca-4d21-9433-ba3f4dfbf9cf",
     "57a133a8-ef64-4af4-ae3d-2661aa21438a",
     "7d09714b-e325-4ed8-85a5-a9d6fe39fea4",
     "e30789c7-a70d-47bf-a118-6fea3f9a2347",
-    "40ba320b-cdd0-4772-bc1a-531bd6a1630e",
     "d98ed3ac-81a2-47e5-b7b2-b07c630976dd"
   ]
 }
