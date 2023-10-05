@@ -93,6 +93,7 @@
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-1",
         "template--18242976317724__9da399a2-782d-4e0e-8bcc-2f9e9bde9e19-1681493855ea1d8e9a-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/5ea27a16b6a15e74865ec20b_portrait-02.jpg",
         "layout": "image_first"
