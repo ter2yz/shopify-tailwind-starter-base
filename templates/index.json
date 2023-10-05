@@ -238,6 +238,7 @@
         },
         "template--18242976317724__40ba320b-cdd0-4772-bc1a-531bd6a1630e-16816586987fc4d71f-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "We’re a top-tier retailer you know."
           }
@@ -259,7 +260,7 @@
           "type": "service",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-trolley_amber-secondary_af7f5856-42ed-44cd-b4ac-f82badb8a2fe.svg",
-            "description": "Fast shipping with package tracking."
+            "description": "Free shipping on orders over $99 for melbourne and over $150 for all other areas in Australia"
           }
         }
       },
